@@ -1,3 +1,48 @@
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),
+        url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),
+        url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),
+        url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?subset_id=2&fvd=i4&v=3) format("woff"),
+        url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?subset_id=2&fvd=i4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),
+        url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?subset_id=2&fvd=i7&v=3) format("woff"),
+        url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?subset_id=2&fvd=i7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+
 body {
     font-family: Helvetica, arial, sans-serif;
     font-weight: normal;
@@ -24,6 +69,11 @@ body h1 {
     color: #000;
 }
 
+#page {
+    padding: 38px 0;
+    opacity: 1;
+    position: relative;
+}
 
 .page-divider {
     border-bottom: 1px solid #000;
@@ -60,13 +110,52 @@ footer::after,
     clear: both;
 }
 
+
+.layout-style-center .social-links .sqs-svg-icon--wrapper {
+
+    margin: 0 5px 10px;
+        margin-left: 5px;
+
+}
+.social-icon-style-normal .social-links .sqs-svg-icon--wrapper {
+
+    margin: 0 7.375px;
+
+}
+.social-links .sqs-svg-icon--wrapper:first-of-type {
+
+    margin-left: 0 !important;
+
+}
+.social-links .sqs-svg-icon--wrapper {
+
+    margin: 0 0 10px 10px;
+
+}
+.social-links .sqs-svg-icon--wrapper {
+
+    width: 25px;
+    height: 25px;
+    margin: 0 3.25px;
+
+}
+
 a {
+    text-decoration: none;
+    color: #0085bd;
+}
+
+a:hover {
+    color: #60a5dd;
     text-decoration: none;
 }
 
-body a,
-body a:visited {
-    color: #000;
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
 }
 
 body a:hover {
@@ -76,6 +165,12 @@ body a:hover {
 body a:focus {
     outline: none;
 }
+
+body a,
+body a:visited {
+    color: #000;
+}
+
 
 
 article,
@@ -466,6 +561,18 @@ p {
 #socialLinks {
     font-size: 0;
     line-height: 0;
+    text-align: right;
+    float: right;
+    text-align: right;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+    color: #222;
 }
 
 .layout-style-center #footer #footerBlock,
@@ -502,13 +609,13 @@ p {
     margin-left: 0 !important;
 }
 
+.social-icon-style-normal .social-links .sqs-svg-icon--wrapper {
+    margin: 0 7.375px;
+}
+
 .layout-style-center .social-links .sqs-svg-icon--wrapper {
     margin: 0 5px 10px;
     margin-left: 5px;
-}
-
-.sqs-svg-icon--wrapper {
-    cursor: pointer;
 }
 
 .sqs-svg-icon--wrapper>div,
