@@ -35,15 +35,6 @@ body h1 {
     margin-bottom: 31px;
 }
 
-#header,
-#page,
-#footer,
-footer,
-.meta-row,
-.clear {
-    *zoom: 1;
-}
-
 #header::before,
 #page::before,
 #footer::before,
@@ -330,7 +321,7 @@ img[data-src] {
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
     max-width: 100%;
-  }
+}
 
 .sqs-col-1 {
     width: 8.3333%;
@@ -357,39 +348,10 @@ img[data-src] {
     padding-bottom: 17px;
 }
 
+
 [class*="sqs-col"] .sqs-block {
     padding-left: 17px;
     padding-right: 17px;
-}
-
-.sqs-block:not(.sqs-block-html):not(.sqs-block-markdown) {
-    clear: both;
-}
-
-.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child {
-    padding-top: 0;
-}
-
-.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child:last-child {
-    padding-bottom: 0;
-}
-
-.sqs-layout:not(.sqs-editing) .sqs-row+.sqs-row .sqs-block:not(.float):first-child {
-    padding-top: 17px;
-}
-
-#page {
-    padding: 38px 0;
-    opacity: 1;
-    position: relative;
-}
-
-figure {
-    margin: 0;
-}
-
-.sqs-block-image .sqs-block-image-figure {
-    margin: 0;
 }
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .intrinsic {
@@ -414,6 +376,33 @@ img[data-src] {
     -o-transition: opacity .3s ease-out;
     transition: opacity .3s ease-out;
 }
+
+.sqs-block:not(.sqs-block-html):not(.sqs-block-markdown) {
+    clear: both;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child {
+    padding-top: 0;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child:last-child {
+    padding-bottom: 0;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row+.sqs-row .sqs-block:not(.float):first-child {
+    padding-top: 17px;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row+.sqs-row:not(:last-child) .sqs-block:last-child {
+    padding-bottom: 17px;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row+.sqs-row .sqs-block:not(.float):first-child:last-child {
+    padding-bottom: 17px;
+}
+
+
+
 
 /*/footer/*/
 #footer {
