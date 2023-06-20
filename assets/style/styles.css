@@ -563,8 +563,7 @@ p {
     line-height: 0;
     text-align: right;
     float: right;
-    text-align: right;
-}
+  }
 
 body,
 button,
@@ -597,16 +596,6 @@ textarea {
     -o-transition: background-color 170ms ease-in-out;
     transition: background-color 170ms ease-in-out;
     z-index: 0;
-}
-
-.social-links .sqs-svg-icon--wrapper {
-    width: 25px;
-    height: 25px;
-    margin: 0 3.25px;
-}
-
-.social-links .sqs-svg-icon--wrapper:first-of-type {
-    margin-left: 0 !important;
 }
 
 .social-icon-style-normal .social-links .sqs-svg-icon--wrapper {
@@ -646,4 +635,475 @@ svg:not(:root) {
 
 .social-icon-style-normal:not(.tweak-template-social-icon-standard-color) .social-links .sqs-use--icon {
     fill: #000;
+}
+
+@media screen and (max-width: 480px) {
+    .sqs-gallery-design-list .sqs-gallery-design-list-slide:not(.no-image) .sqs-gallery-image-container {
+        width:35% !important
+    }
+
+    .sqs-gallery-design-list .sqs-gallery-design-list-slide:not(.no-image) .sqs-gallery-meta-container {
+        width: 65% !important
+    }
+}
+@media only screen and (max-width: 700px) {
+    #productSummary .product-title {
+        display:none
+    }
+
+    #productSummary .product-title.mobile {
+        display: block
+    }
+
+    .product-meta {
+        margin-top: 0 !important
+    }
+
+    #productDetails,#productGallery {
+        width: 100%;
+        float: none
+    }
+
+    #productList {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0
+    }
+
+    #productList .product {
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        cursor: pointer;
+        margin-bottom: 3%
+    }
+
+    #productList .product .product-image {
+        margin-bottom: 3%
+    }
+
+    #productList .product .product-image .content-fit {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0
+    }
+
+    #productList .product .product-image img {
+        transition: opacity .3s ease-out
+    }
+
+    .product-quick-view {
+        display: none
+    }
+}
+
+@media all and (max-width: 414px) {
+    [data-test="member-access-page-root"] {
+        width:350px
+    }
+}
+
+@media only screen and (min-device-width: 641px) {
+    html.touch #simpleControls {
+        display:block !important
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .gallery-controls {
+        display:none !important
+    }
+
+    #simpleControls {
+        display: none !important
+    }
+
+    .layout-style-right.site-title h1.logo {
+        margin-right: 0
+    }
+
+    #logo {
+        float: none !important
+    }
+
+    h1.logo {
+        text-align: center !important;
+        display: block !important;
+        letter-spacing: 0 !important;
+        margin: 0 !important
+    }
+
+    h1.logo.no-nav-items {
+        margin-top: 25px !important
+    }
+
+    .logo-image .logo {
+        height: 85px
+    }
+
+    .logo-image .logo img {
+        display: inline
+    }
+
+    .logo-subtitle {
+        text-align: center
+    }
+
+    .sqs-layout [class*=sqs-col] {
+        float: none !important;
+        width: auto !important
+    }
+
+    .sqs-layout .spacer-block {
+        display: none
+    }
+
+    .sqs-layout .sqs-row .sqs-block:first-child {
+        padding-top: 17px !important
+    }
+
+    .sqs-layout .sqs-row .sqs-block:last-child {
+        padding-bottom: 17px !important
+    }
+
+    .sqs-layout .sqs-row+.sqs-row,.sqs-layout .sqs-row+.sqs-block {
+        margin-top: 0 !important
+    }
+
+    .sqs-gallery-design-grid-slide {
+        width: 50% !important;
+        clear: none !important
+    }
+
+    #canvas {
+        margin: 0 auto;
+        padding: 20px
+    }
+
+    #slideshowWrapper {
+        margin: 0 !important
+    }
+
+    #galleryWrapper {
+        position: static
+    }
+
+    .gallery-controls {
+        display: none !important
+    }
+
+    #slideshow img {
+        width: 100%
+    }
+
+    #slideshow .slide {
+        margin-bottom: 20px;
+        position: static !important;
+        opacity: 1 !important;
+        height: auto !important
+    }
+
+    #slideshow .slide img {
+        position: static !important
+    }
+
+    #projectThumbs>.wrapper {
+        width: 104%;
+        margin-left: -4%;
+        margin-top: -4%
+    }
+
+    #projectThumbs .project {
+        float: left;
+        margin-left: 3.84615385%;
+        margin-top: 4%;
+        width: 46.15384615%;
+        cursor: pointer
+    }
+
+    #projectThumbs .project .project-image {
+        opacity: 1;
+        
+    }
+
+    #projectThumbs .project .project-image {
+        background: #eee;
+        margin-bottom: 4%
+    }
+
+    #projectThumbs .project .project-image .intrinsic {
+        padding-bottom: 100%;
+        line-height: 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden
+    }
+
+    #projectThumbs .project .project-image .content-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0
+    }
+
+    #projectThumbs .project .project-title {
+        font-family: Georgia,serif;
+        font-weight: normal;
+        font-style: italic;
+        text-transform: none;
+        font-family: futura-pt;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6em;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #000
+    }
+
+    #projectThumbs .project .project-item-count {
+        display: none
+    }
+
+    #projectThumbs .project:nth-child(odd) {
+        clear: left !important
+    }
+
+    #projectThumbs .project:nth-child(3n+1) {
+        clear: none
+    }
+
+    #header {
+        margin-bottom: 30px
+    }
+
+    .site-title #topNav nav li a,.logo-image #topNav nav li a {
+        padding: 11.6px 0 0
+    }
+
+    .layout-style-left.index-item-layout-auto #projectPages .project,.layout-style-right.index-item-layout-auto #projectPages .project,.layout-style-center.index-item-layout-auto #projectPages .project,.layout-style-left.index-item-layout-left #projectPages .project,.layout-style-right.index-item-layout-left #projectPages .project,.layout-style-center.index-item-layout-left #projectPages .project,.layout-style-left.index-item-layout-right #projectPages .project,.layout-style-right.index-item-layout-right #projectPages .project,.layout-style-center.index-item-layout-right #projectPages .project,.layout-style-left.index-item-layout-center #projectPages .project,.layout-style-right.index-item-layout-center #projectPages .project,.layout-style-center.index-item-layout-center #projectPages .project {
+        margin: 0
+    }
+
+    .layout-style-left.index-item-layout-auto #projectPages .project .project-meta,.layout-style-right.index-item-layout-auto #projectPages .project .project-meta,.layout-style-center.index-item-layout-auto #projectPages .project .project-meta,.layout-style-left.index-item-layout-left #projectPages .project .project-meta,.layout-style-right.index-item-layout-left #projectPages .project .project-meta,.layout-style-center.index-item-layout-left #projectPages .project .project-meta,.layout-style-left.index-item-layout-right #projectPages .project .project-meta,.layout-style-right.index-item-layout-right #projectPages .project .project-meta,.layout-style-center.index-item-layout-right #projectPages .project .project-meta,.layout-style-left.index-item-layout-center #projectPages .project .project-meta,.layout-style-right.index-item-layout-center #projectPages .project .project-meta,.layout-style-center.index-item-layout-center #projectPages .project .project-meta {
+        margin: 0 auto 20px;
+        width: auto !important;
+        float: none !important
+    }
+
+    #projectPages.page-open+#projectThumbs {
+        display: none
+    }
+
+    .article-list,.article-wrapper {
+        margin: 0 !important
+    }
+
+    #sidebar {
+        width: auto !important;
+        position: static !important;
+        margin-top: 38px
+    }
+
+    .has-primary-nav #canvas {
+        padding-top: 0
+    }
+
+    #header #topNav {
+        display: none
+    }
+
+    #mobileMenuLink {
+        margin: 0 0 25px;
+        display: block;
+        font-family: Georgia,serif;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+        text-transform: none;
+        letter-spacing: 0px;
+        font-family: futura-pt;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6em;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        padding: 0 0 15px;
+        background-color: rgba(255,255,255,0);
+        text-align: center;
+        border-bottom: 1px solid #000
+    }
+
+    #mobileMenuLink a {
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        font-size: 16px !important;
+        color: #000
+    }
+
+    .page-borders-none #mobileMenuLink {
+        border-bottom: 0px solid #000
+    }
+
+    .page-borders-thick #mobileMenuLink {
+        border-bottom: 4px solid #000
+    }
+
+    .page-borders-dotted #mobileMenuLink {
+        border-bottom: 1px dotted #000
+    }
+
+    #header #mobileNav {
+        position: static;
+        top: auto
+    }
+
+    #mobileNav {
+        background: rgba(255,255,255,0);
+        margin: 0 0 15px
+    }
+
+    #mobileNav .wrapper {
+        padding: 0 0 1em;
+        border-bottom: 1px solid #000
+    }
+
+    #mobileNav nav+nav {
+        margin: 0 0 1em
+    }
+
+    #mobileNav nav ul li,#mobileNav .folder-toggle-label {
+        display: block;
+        text-align: center;
+        float: none !important
+    }
+
+    #mobileNav a,#mobileNav .folder-toggle-label {
+        font-family: Georgia,serif;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+        text-transform: none;
+        letter-spacing: 0px;
+        font-family: futura-pt;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: rgba(0,0,0,.7);
+        font-size: 16px;
+        line-height: 2.5em;
+        display: block;
+        text-align: center
+    }
+
+    #mobileNav .folder-toggle-label {
+        text-indent: 1em
+    }
+
+    #mobileNav .subnav {
+        display: none
+    }
+
+    #mobileNav .subnav a {
+        line-height: 1.5em
+    }
+
+    #mobileNav .active-link a {
+        color: #000
+    }
+
+    #mobileNav input.folder-toggle-box+.folder-toggle-label:after {
+        content: '+';
+        padding-left: .5em
+    }
+
+    #mobileNav input.folder-toggle-box:checked+.folder-toggle-label:after {
+        content: '–';
+        padding-left: .45em
+    }
+
+    #mobileNav input.folder-toggle-box:checked+.folder-toggle-label+.subnav {
+        display: block;
+        margin-bottom: .5em
+    }
+
+    .category-nav-toggle-label {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+        top: .5em;
+        right: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 1.8em;
+        text-align: right
+    }
+
+    .category-nav-toggle-label:after {
+        font-size: 21px;
+        content: "+";
+        display: block;
+        text-align: right
+    }
+
+    #categoryNav {
+        margin-bottom: 25px;
+        position: relative;
+        padding: 0 12px;
+        background-color: rgba(150,150,150,.1)
+    }
+
+    #categoryNav ul {
+        text-align: left;
+        font-size: 14px;
+        margin: 0px 10% 0 0;
+        padding: 0;
+        line-height: 1.8em
+    }
+
+    #categoryNav ul li {
+        margin: 0;
+        display: none
+    }
+
+    #categoryNav ul li.filter {
+        display: block;
+        visibility: visible
+    }
+
+    #categoryNav ul li a {
+        display: block;
+        font-size: 14px;
+        padding: .5em 0
+    }
+
+    #categoryNav #categoryNavToggle:checked+.category-nav-toggle-label {
+        z-index: 0
+    }
+
+    #categoryNav #categoryNavToggle:checked+.category-nav-toggle-label:after {
+        content: '–'
+    }
+
+    #categoryNav #categoryNavToggle:checked~.category-nav ul {
+        z-index: 2
+    }
+
+    #categoryNav #categoryNavToggle:checked~.category-nav ul li:not(.filter) {
+        display: block
+    }
 }

@@ -1,0 +1,107 @@
+/*///////////////////FORMULAIRE//////////////*/
+.formulaire {
+    margin-top : 30px;
+    
+  }
+  
+  .form-title {
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: #2f365f;
+    text-shadow: 0.1em 0.1em #0ae9bc;
+  }
+  
+  .contact_form {
+    margin-left: 60px;
+    width: 80%;
+  }
+  
+  .contact_form-box {
+    display : flex;
+    justify-content : space-between;
+    gap : 20px;
+  }
+  
+  .contact_form-box1, .contact_form-box2 {
+    width : 50%;
+  }
+  
+  .contact_form-container {
+    height: 4rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .contact_form-tag {
+    background-color: var(--body-color);
+    font-size: 20px;
+    left: 1.25rem;
+    padding: 0.25rem;
+    position: absolute;
+    bottom: 3.75rem;
+    color: #f7f1ed;
+    text-transform: none;
+  }
+  
+  .contact_form-input {
+    background: #f7f1edc9;
+    border: 2px solid #f7f1ed;
+    border-radius: 0.75rem;
+    color: black;
+    height: 100%;
+    left: 0;
+    outline: none;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-family: "Aboreto", cursive, sans-serif;
+  }
+  
+  .tag_projet {
+    top: -1.9rem;
+  }
+  
+  .contact-area {
+    height: 11rem;
+  }
+  .contact-area textarea {
+    resize: none;
+  }
+  
+/*///////////////////btn envoyer//////////////*/
+
+.button_link {
+    display: inline-block;
+    text-align: center;
+    background-color: #2f365f;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 30%;
+  }
+  
+  /*utiliser transform ne fontionne pas sur element inline */
+  .button_link .button_link-send {
+    display: inline-block;
+    background: #2f365f;
+    color: #f7f1ed;
+    border: 3px solid #f7f1ed;
+    padding: 18px;
+    border-radius: 0.75rem;
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.15s ease-out, color 0.15s ease-out,
+      background-color 0.15s ease-out;
+  }
+  
+  .button_link:hover .button_link-send {
+    transform: translate(-6px, -6px);
+    color: #f7f1ed;
+    background: #0ae9bc;
+  }
+    
