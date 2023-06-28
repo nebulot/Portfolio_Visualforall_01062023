@@ -1,4 +1,10 @@
 h2.description {
     text-align: center;
     text-transform: none;
+    line-height: 2em;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
 }
