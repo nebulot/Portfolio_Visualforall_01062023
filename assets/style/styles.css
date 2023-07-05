@@ -219,6 +219,240 @@ h6 {
     display: block;
 }
 
+.extra-wrapper {
+        margin-top: 15px;
+}
+
+
+
+/* CARROUSSEL */
+
+.slider1 {
+    margin-bottom : 10px;
+}
+
+section {
+    position: relative;
+    word-wrap: break-word;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  
+.cid-sABCzw8yGR {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-color: #fafafa;
+}
+
+.carousel {
+    position: relative;
+}
+
+
+.carousel.pointer-event {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.cid-sABCzw8yGR .carousel {
+    height: 800px;
+}
+
+.cid-sABCzw8yGR .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1.5rem !important;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.cid-sABCzw8yGR .carousel-indicators li {
+    max-width: 15px;
+    height: 15px;
+    width: 15px;
+    max-height: 15px;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.cid-sABCzw8yGR .carousel-indicators li.active, .cid-sABCzw8yGR .carousel-indicators li:hover {
+    opacity: 0.9;
+  }
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.cid-sABCzw8yGR .carousel-item,
+.cid-sABCzw8yGR .carousel-inner {
+    height: 100%;
+}
+
+
+
+.carousel-item {
+    text-align: center;
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    transition-property: transform, transform;
+    transition-duration: 0.6s, 0.6s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+
+.card-wrapper,
+.item-wrapper {
+    overflow: hidden;
+}
+
+.carousel-item img {
+    margin: auto;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.bigdiv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 700px;
+    height: 140px;
+    width: 1080px;
+    margin: 0 auto
+}
+
+.carrou {
+    justify-content: center;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+    display: flex;
+  }
+
+
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 50.333333%;
+        max-width: 50.333333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Navbar */
+
 #topNav {
     font-family: Georgia, serif;
     font-weight: normal;
