@@ -71,8 +71,15 @@ textarea {
 
 input {
   width: 100%;
-  background-color : #a9a9a9;
+  background-color : #fff3f0;
 }
+
+textarea {
+
+  background-color : #fff3f0;
+}
+
+
 
 .field.textarea {
   padding: 10px 25px 10px 30px;

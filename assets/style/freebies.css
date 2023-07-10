@@ -8,3 +8,7 @@ h2.description {
     display: flex;
     justify-content: center;
 }
+
+.thumb-image-freebies:hover {
+    transform: scale(1.5);
+}
