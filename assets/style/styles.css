@@ -121,12 +121,13 @@ footer::after,
 
 #svg-icon-rounded {
     border: solid 3px #0ae9bc;
-    background-color:#0ae9bc;
+    background-color: #0ae9bc;
     border-radius: 50px;
-    margin: 3px 0;  
-    width:40px;
-    height:40px;
-    cursor:pointer;
+    margin: 3px 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 3px 7px 0px;
 }
 
 
@@ -423,7 +424,7 @@ body #topNav .active-link>a {
 }
 
 h4:hover {
-    color : #f61067;
+    color: #f61067;
 
 }
 
@@ -539,6 +540,15 @@ img[data-src] {
 }
 
 
+.block-image-linear::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    box-shadow: -25px 26px 0 1.7px #0ae9bc, -38px 18px 0 1.7px #0ae9bc, -38px 34px 0 2px #0ae9bc;
+    left: 74px;
+    rotate: -90deg;
+    bottom:-28px;
+}
 
 
 .sqs-block-image a.thumb-image-link {
@@ -564,16 +574,40 @@ img[data-src] {
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
     max-width: none;
+    border: solid 5px black;
 }
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
     max-width: 100%;
 }
 
-* .block-image-rotate {
-    transform: rotate(-90deg);
+.block-image-rotate::before  {
     width: 79%;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    transform: rotate(-90deg);
 }
+
+.block-image-linear {
+   
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
 
 .sqs-col-1 {
     width: 8.3333%;
@@ -774,7 +808,7 @@ a.form-button-submit:hover::before {
 
 .sqs-block-html .sqs-block-content> :first-child,
 .sqs-block-html .sqs-html-content> :first-child {
-    margin-top: 16px;
+    margin-top: 0px;
 }
 
 .sqs-block-html .sqs-block-content> :last-child,
@@ -876,8 +910,10 @@ svg:not(:root) {
     fill: #000;
 }
 
-#instagram-icon, #pinterest-icon, #linkedin-icon {
-    fill:white;
+#instagram-icon,
+#pinterest-icon,
+#linkedin-icon {
+    fill: white;
 }
 
 .links {
@@ -888,10 +924,9 @@ svg:not(:root) {
 
 #svg-icon-rounded:hover {
     background-color: #f61067;
+
 }
 
 .font-h5 {
     text-align: center;
 }
-
-
