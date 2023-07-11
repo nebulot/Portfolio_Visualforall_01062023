@@ -111,33 +111,25 @@ footer::after,
     clear: both;
 }
 
-
-.layout-style-center .social-links .sqs-svg-icon--wrapper {
-
-    margin: 0 5px 10px;
-    margin-left: 5px;
-
-}
-
-.social-icon-style-normal .social-links .sqs-svg-icon--wrapper {
-
-    margin: 0 7.375px;
-
-}
-
-.social-links .sqs-svg-icon--wrapper {
-
-    margin: 0 0 10px 10px;
-
-}
-
 .social-links .sqs-svg-icon--wrapper {
 
     width: 25px;
     height: 25px;
-    margin: 0 3.25px;
+    margin: 7px 0px 0px 8px;
 
 }
+
+#svg-icon-rounded {
+    border: solid 3px #0ae9bc;
+    background-color:#0ae9bc;
+    border-radius: 50px;
+    margin: 3px 0;  
+    width:40px;
+    height:40px;
+    cursor:pointer;
+}
+
+
 
 a {
     text-decoration: none;
@@ -160,7 +152,7 @@ a:active {
 }
 
 body a:hover {
-    color: #fc7db4;
+    color: #f61067;
 }
 
 body a:focus {
@@ -224,8 +216,6 @@ h6 {
 /* CARROUSSEL */
 
 
-
-
 swiper-container {
     margin-bottom: 10px;
     position: relative;
@@ -285,11 +275,6 @@ swiper-slide img {
 }
 
 
-
-
-
-
-
 .carousel-item img {
     margin: auto;
 }
@@ -317,16 +302,13 @@ swiper-slide img {
 }
 
 .slogan {
-    color: #f61067;
+    color: white;
 }
 
 .carrou {
     justify-content: center;
-  
+
 }
-
-
-
 
 
 @media (min-width: 992px) {
@@ -434,6 +416,15 @@ nav ol {
 
 body #topNav .active-link>a {
     color: #3c91e6;
+}
+
+.active-link {
+    color: #3c91e6;
+}
+
+h4:hover {
+    color : #f61067;
+
 }
 
 .logo-image #topNav nav li a {
@@ -578,10 +569,10 @@ img[data-src] {
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
     max-width: 100%;
 }
-*
-.block-image-rotate {
+
+* .block-image-rotate {
     transform: rotate(-90deg);
-    width : 79%;
+    width: 79%;
 }
 
 .sqs-col-1 {
@@ -692,7 +683,7 @@ img[data-src] {
 }
 
 body a.form-button-submit:visited {
-    color: #f61067;
+    color: #3c91e6;
 }
 
 a.form-button-submit:active {
@@ -702,9 +693,9 @@ a.form-button-submit:active {
 }
 
 a.form-button-submit {
-    color: #fff3f0;
+    color: #0ae9bc;
     font-family: 'Pacifico', cursive;
-    background: #3c91e6;
+    background: #fff3f0;
     height: 60px;
     width: 200px;
     display: flex;
@@ -718,7 +709,6 @@ a.form-button-submit {
     font-weight: 400;
     z-index: 0;
     position: relative;
-    text-shadow: 0px -2px #2980b9;
     transition: all .1s;
     -webkit-transition: all .1s;
     float: left;
@@ -733,7 +723,7 @@ a.form-button-submit::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff3f0;
+    background: #0ae9bc;
     border-radius: 100% 30% 0% 0%;
     transition: all .5s;
     z-index: -1
@@ -784,20 +774,13 @@ a.form-button-submit:hover::before {
 
 .sqs-block-html .sqs-block-content> :first-child,
 .sqs-block-html .sqs-html-content> :first-child {
-    margin-top: 0;
+    margin-top: 16px;
 }
 
 .sqs-block-html .sqs-block-content> :last-child,
 .sqs-block-html .sqs-html-content> :last-child {
     margin-bottom: 0;
 }
-
-.font-h5 {
-    text-align:center; 
-    margin-bottom: 10 px;
-
-}
-
 
 
 p {
@@ -862,14 +845,6 @@ textarea {
     z-index: 0;
 }
 
-.social-icon-style-normal .social-links .sqs-svg-icon--wrapper {
-    margin: 0 7.375px;
-}
-
-.layout-style-center .social-links .sqs-svg-icon--wrapper {
-    margin: 5px 0 5px 10px;
-   
-}
 
 .sqs-svg-icon--wrapper>div,
 .sqs-svg-icon--wrapper svg {
@@ -901,8 +876,22 @@ svg:not(:root) {
     fill: #000;
 }
 
+#instagram-icon, #pinterest-icon, #linkedin-icon {
+    fill:white;
+}
+
 .links {
     display: flex;
     flex-direction: column;
-    margin: 5% 18%;
+    margin: 5px 0 0 49px;
 }
+
+#svg-icon-rounded:hover {
+    background-color: #f61067;
+}
+
+.font-h5 {
+    text-align: center;
+}
+
+
