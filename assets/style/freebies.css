@@ -1,12 +1,10 @@
-
-
 .gallery-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .thumb-image-freebies:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /*contact*/
@@ -20,36 +18,36 @@ textarea {
 }
 
 .sqs-block-form {
-    text-transform: none;
-    font-size: 14px;
-    font-style: normal;
-  }
+  text-transform: none;
+  font-size: 14px;
+  font-style: normal;
+}
 
-  .form-content {
-    max-width: 650px;
-    padding: 40px;
-    margin: 0 auto;
-  }
+.form-content {
+  max-width: 650px;
+  padding: 40px;
+  margin: 0 auto;
+}
 
-  h2.description {
-    text-align: center;
-    text-transform: none;
-    line-height: 2em;
+h2.description {
+  text-align: center;
+  text-transform: none;
+  line-height: 2em;
 }
 
 .form-title-wrapper {
-    display: inline-flex;
-    align-items: center;
-  }
+  display: inline-flex;
+  align-items: center;
+}
 
-  .form-title {
-    margin-bottom: 1.6rem;
-    text-align: center;
-    font-size: 22px;
-    line-height: 1.2em;
-    color: #2f365f;
-    text-shadow: 0.1em 0.1em #0ae9bc;
-  }  
+.form-title {
+  margin-bottom: 1.6rem;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.2em;
+  color: #2f365f;
+  text-shadow: 0.1em 0.1em #0ae9bc;
+}
 
 .form-content,
 .form-wrapper {
@@ -76,44 +74,51 @@ textarea {
 }
 
 .input-text-field {
-    background-color: #fafafa;
-    border: 1px solid #a9a9a9;
-    box-sizing: border-box;
-    color: #000;
-    height: 46px;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-  }
-  
-  input {
-    width: 100%;
-    background-color : #fff3f0;
-  }
-  
-  textarea {
-  
-    background-color : #fff3f0;
-  }
-  
-  
-  
-  .field.textarea {
-    padding: 10px 25px 10px 30px;
-    
-  }
-  
-  #name {
-    display: flex;
-    flex-direction: inherit;
-    padding: 0;
-  }
-  
-  .field {
-    padding: 10px 30px;
-  }
+  background-color: #fafafa;
+  border: 1px solid #a9a9a9;
+  box-sizing: border-box;
+  color: #000;
+  height: 46px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
 
-  
+input {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
+.field-element {
+  border-radius: 8px;
+}
+
+textarea {
+  background-color: rgb(235, 235, 235);
+}
+
+
+
+.field.textarea {
+  padding: 10px 25px 10px 30px;
+
+}
+
+.field-element::placeholder {
+  color: #a9a9a9 !important;
+}
+
+#name {
+  display: flex;
+  flex-direction: inherit;
+  padding: 0;
+}
+
+.field {
+  padding: 10px 30px;
+}
+
+
 .form-content,
 .form-wrapper,
 .form-title .react-form-contents {
@@ -126,7 +131,7 @@ textarea {
 
 .form-wrapper,
 .field-list {
-  line-height: normal; 
+  line-height: normal;
 }
 
 .form-button-wrapper {
@@ -157,51 +162,51 @@ textarea {
 
 
 .form-item {
-    column-gap: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  fieldset {
-    border: none;
-  }
-  
-  label {
-    cursor: pointer;
-  }
-  
-  .V {
-    display: inline-block;
-  }
-  
-  .Y {
-    align-items: center;
-    column-gap: 1ex;
-    display: flex;
-    flex-wrap: wrap;
-  } 
+  column-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+.V {
+  display: inline-block;
+}
+
+.Y {
+  align-items: center;
+  column-gap: 1ex;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .form-wrapper .field-list .description {
-    padding: .5em 0 .5em;
-    font-size: 12px;
-    opacity: .7;
-    /*display: block;*/
-    white-space: pre-wrap;
-  }
-  
-  input {
-    height: 30px;
-  }
-  
-  label #title {
-    padding-bottom: 4px;
-  }
-  
-  .form-wrapper .react-form-contents .field-list .fields.name .field {
-    width: 50%;
-  }
+  padding: .5em 0 .5em;
+  font-size: 12px;
+  opacity: .7;
+  /*display: block;*/
+  white-space: pre-wrap;
+}
 
-  
+input {
+  height: 30px;
+}
+
+label #title {
+  padding-bottom: 4px;
+}
+
+.form-wrapper .react-form-contents .field-list .fields.name .field {
+  width: 50%;
+}
+
+
 /*utiliser transform ne fontionne pas sur element inline */
 .button_link,
 .button_link-send {
@@ -241,4 +246,58 @@ textarea {
   .contact_form-box2 {
     width: 100%;
   }
+}
+
+/*Garden Bistro*/
+
+.inner::before {
+  content: '';
+  position: absolute;
+
+  left: 110px;
+  width: 2px;
+  height: 30%;
+  background-color: #1f1f1f;
+  animation: 3s linear slidein;
+  z-index: 2;
+
+}
+
+.image-garden {
+  margin-top: 20px;
+  width: 50%;
+  animation: 1s linear slidein;
+}
+
+.thumb-image-figcaption {
+  margin-left: 101px;
+}
+
+@keyframes slidein {
+  from {
+    transform: scaley(0);
+  }
+
+  to {
+    transform: scaley(1);
+  }
+}
+
+
+
+
+.image-garden-inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.image-garden-visualisation {
+  width: 40%;
+}
+
+img.image-garden-visualisation:hover {
+  vertical-align: unset;
+
 }
