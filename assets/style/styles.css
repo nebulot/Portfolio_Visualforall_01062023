@@ -56,6 +56,70 @@ body {
     text-transform: uppercase;
 }
 
+
+
+
+.bottom {
+    display: flex;
+
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    right: 24%;
+    cursor: pointer;
+    width: 190px;
+    flex-direction: row;
+    padding-top: 10px;
+
+
+}
+
+.Btn {
+    background: #f61067;
+    border: none;
+    color: inherit;
+    pointer-events: auto;
+}
+
+.btn-t {
+    text-transform: uppercase;
+    font-weight : bold;
+    width: 260%;
+    padding : 20px;
+}
+
+@media (hover: hover) {
+    
+}
+
+#scrolltop {
+    /*display: none;*/
+    display: flex;
+    z-index: 10000;
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: #f61067;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 3px 7px 0px #0085bd;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.scrolltop-cookie {
+    justify-content: center;
+
+}
+
 #canvas {
     max-width: 1080px;
     margin: 20px auto;
@@ -547,7 +611,7 @@ img[data-src] {
     box-shadow: -25px 26px 0 1.7px #0ae9bc, -38px 18px 0 1.7px #0ae9bc, -38px 34px 0 2px #0ae9bc;
     left: 74px;
     rotate: -90deg;
-    bottom:-28px;
+    bottom: -28px;
 }
 
 
@@ -581,7 +645,7 @@ img[data-src] {
     max-width: 100%;
 }
 
-.block-image-rotate::before  {
+.block-image-rotate::before {
     width: 79%;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
@@ -589,7 +653,7 @@ img[data-src] {
 }
 
 .block-image-linear {
-   
+
     animation: float 6s ease-in-out infinite;
 }
 
@@ -716,64 +780,8 @@ img[data-src] {
     padding-bottom: 17px;
 }
 
-body a.form-button-submit:visited {
-    color: #3c91e6;
-}
 
-a.form-button-submit:active {
-    transform: translate(0, 5px);
-    -webkit-transform: translate(0, 5px);
-    border-bottom: 1px solid;
-}
-
-a.form-button-submit {
-    color: #0ae9bc;
-    font-family: 'Pacifico', cursive;
-    background: #fff3f0;
-    height: 60px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 5px solid #0ae9bc;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    font-size: 1.3em;
-    letter-spacing: 6px;
-    font-weight: 400;
-    z-index: 0;
-    position: relative;
-    transition: all .1s;
-    -webkit-transition: all .1s;
-    float: left;
-
-    /*se delimite au bouton et non au body*/
-}
-
-a.form-button-submit::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0ae9bc;
-    border-radius: 100% 30% 0% 0%;
-    transition: all .5s;
-    z-index: -1
-}
-
-a.form-button-submit:hover::before {
-    top: 0;
-    border-radius: 0;
-
-}
-
-
-
-
-
-/*/footer/*/
+/*--footer--*/
 #footer {
     margin-top: 38px;
 }
