@@ -42,6 +42,10 @@
     font-display: auto;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 
 
 body {
@@ -56,38 +60,30 @@ body {
     text-transform: uppercase;
 }
 
-
-
-
-.bottom {
-    display: flex;
+.scrollTop {
+    background: #f61067;
+    border: none;
+    color: white;
+    cursor : pointer;
+    box-shadow: 0 3px 7px 0px #0085bd;
     z-index: 10000;
     position: fixed;
     bottom: 0;
-    right: 24%;
-    cursor: pointer;   
-    flex-direction: row;
-    }
-
-#scrolltop {
-    background: #f61067;
-    border: none;
-    color: inherit;
-    cursor : pointer;
-    box-shadow: 0 3px 7px 0px #0085bd;
-}
-
-svg.arrow {
-    padding-top : 20px;
-    padding-left : 10px;
-}
-
-.btn-t {
+    right: 24%;         
+    transition : all 0.5s ease 0s;
     text-transform: uppercase;
-    font-weight : bold;
-    width: 208%;
     padding : 10px;
+    font-weight : bold;
+    display : flex;
+    flex-direction : row;
+    width: 9%;
 }
+
+.scrollTop:hover{
+    background-color : #0085bd;    
+}
+
+
 
 @media (hover: hover) {
     
@@ -905,14 +901,7 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-.sqs-use--icon,
-.sqs-use--mask {
-    fill: transparent;
-    -webkit-transition: fill 170ms ease-in-out;
-    -moz-transition: fill 170ms ease-in-out;
-    -o-transition: fill 170ms ease-in-out;
-    transition: fill 170ms ease-in-out;
-}
+
 
 .social-icon-style-normal:not(.tweak-template-social-icon-standard-color) .social-links .sqs-use--icon {
     fill: #000;
@@ -920,7 +909,8 @@ svg:not(:root) {
 
 #instagram-icon,
 #pinterest-icon,
-#linkedin-icon {
+#linkedin-icon,
+#arrow-icon {
     fill: white;
 }
 

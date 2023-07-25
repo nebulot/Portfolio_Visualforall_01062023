@@ -3,6 +3,7 @@
 <!--En-tête de la page-->
 
 <head>
+    <script src="https://tarteaucitron.io/load.js?domain=visualforall.fr&uuid=6a7e346a455cbfe2061971d92a93ecdc1e868898"></script>
     <meta charset="utf-8">
     <!-- respecter la norme web internet explorer soit compatible-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,6 +53,52 @@
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/b012d5ddf3.js" crossorigin="anonymous"></script>
 
+    <!--cookie-->
+    <script src="/tarteaucitron/tarteaucitron.js"></script>
+    <script type="text/javascript">
+        tarteaucitron.init({
+          "privacyUrl": "", /* Privacy policy url */
+          "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+        
+          "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+          "cookieName": "tarteaucitron", /* Cookie name */
+        
+          "orientation": "middle", /* Banner position (top - bottom) */
+        
+          "groupServices": false, /* Group services by category */
+          "serviceDefaultState": "wait", /* Default state (true - wait - false) */
+                           
+          "showAlertSmall": false, /* Show the small banner on bottom right */
+          "cookieslist": false, /* Show the cookie list */
+                           
+          "closePopup": false, /* Show a close X on the banner */
+        
+          "showIcon": true, /* Show cookie icon to manage cookies */
+          //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+          "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+        
+          "adblocker": false, /* Show a Warning if an adblocker is detected */
+                           
+          "DenyAllCta" : true, /* Show the deny all button */
+          "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+          "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                           
+          "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+        
+          "removeCredit": false, /* Remove credit link */
+          "moreInfoLink": true, /* Show more info link */
+        
+          "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+          "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+        
+          //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                          
+          "readmoreLink": "", /* Change the default readmore link */
+        
+          "mandatory": true, /* Show a message about mandatory cookies */
+          "mandatoryCta": true /* Show the disabled accept button when mandatory on */
+        });
+        </script>
 
     <title>Accueil</title>
 
@@ -657,22 +704,22 @@
                             <div class="sqs-block image-block sqs-block-image sqs-text-ready">
                                 <h3 class="footer-section-subtitle footer-font-style display-5">Plan du site</h3>
                                 <div>
-                                    <a href="/garden.html">
+                                    <a href="/windows/collabGarden.html">
                                         <h4>Collaboration</h4>
                                     </a>
-                                    <a href="/digitales.html">
+                                    <a href="/windows/digitales.html">
                                         <h4>Créations digitales</h4>
                                     </a>
-                                    <a href="/contact.html">
+                                    <a href="/windows/contact.html">
                                         <h4>Contact</h4>
                                     </a>
-                                    <a href="/freebies.html">
+                                    <a href="/windows/freebies.html">
                                         <h4>Freebies</h4>
                                     </a>
-                                    <a href="/textlegal.html">
+                                    <a href="/windows/textlegal.html">
                                         <h4>Mentions Légales</h4>
                                     </a>
-                                    <a href="/l">
+                                    <a href="/windows/confidentialite.html">
                                         <h4>Politique de confidentialité</h4>
                                     </a>
                                 </div>
@@ -751,12 +798,11 @@
                                     <h5 class="font-h5"> © 2023 VISUAL FOR ALL. ALL RIGHTS RESERVED.</h5>
 
                                     
-                                        <button onclick= "toTop()" id="scrolltop" class="Btn btn-s btn-scroll bottom">
+                                        <button onclick="scrollToTop()" class="scrollTop" class="Btn btn-s btn-scroll bottom">
                                             <span class="btn-t">Scroll to top</span>
-                                            <svg class="sqs-svg-icon--arrow" viewBox="0 0 40 40">
-                                                <use class="sqs-use--arrow" xlink:href="#scrolltoTop-icon" />
-                                            </svg>
-                                            
+                                            <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64" style="width :15%; padding:5px;"> 
+                                                <use class="sqs-use--icon" xlink:href="#arrow-icon" />                                       
+                                            </svg>                                            
                                         </button>
                                    
                                 </div>
@@ -778,10 +824,8 @@
 
     <!--SVG Icones W3C-->
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
-        <symbol id="arrow" viewBox="0 0 40 40" fill="none">
-            <path
-                d="M-4.01135e-07 10L1.49795 10L1.49795 8.00274L2.49658 8.00274L2.49658 5.99863L3.50205 5.99863L3.50205 4.00137L4.50068 4.00137L4.50068 1.99726L5.49932 1.99726L5.49932 4.00137L6.49795 4.00137L6.49795 5.99863L7.50342 5.99863L7.50342 8.00274L8.50205 8.00274L8.50205 10L10 10L10 8.00274L9.00137 8.00274L9.00137 5.99863L8.00274 5.99863L8.00274 4.00137L7.0041 4.00137L7.0041 1.99726L5.99863 1.99726L5.99863 -1.90593e-07L4.00137 -2.85727e-07L4.00137 1.99726L2.9959 1.99726L2.9959 4.00137L1.99726 4.00137L1.99726 5.99863L0.998632 5.99863L0.998632 8.00274L-3.21018e-07 8.00274L-4.01135e-07 10Z"
-                fill="black"></path>
+        <symbol id="arrow-icon" viewBox="0 0 448 512" >
+            <path  d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/>
         </symbol>
 
         <symbol id="email-icon" viewBox="0 0 64 64">
@@ -812,7 +856,7 @@
     <script src="/assets/bootstrap.js/bootstrap.min.js"></script>
     <script src="/assets/swipper/swipper-element-bundle.min.js"></script>
     <script src="index.js"></script>
-
+    
 
 
     <!-- Initialize Swiper -->
@@ -827,8 +871,6 @@
             progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         });
     </script>
-
-
 
 
 </body>

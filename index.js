@@ -1,5 +1,16 @@
 //scroll top retour en haut de page //
 
+function scrollToTop(){
+    //window.scrollTo(0,0);
+    window.scrollTo(0, 'slow');     
+};
+
+
+
+
+
+
+/*
 $('#scrolltop').click(function() {
     $('html,body').animate({
         scrollTop: 0
@@ -7,12 +18,12 @@ $('#scrolltop').click(function() {
 });
 
 $(window).scroll(function() {
-    if ($(window).scrollTop() < 500) {
-        $('#scrolltop').fadeOut()
+    if ($(window).scroll() < 500) {
+        $('.scrollTop').fadeOut()
     } else {
-        $("#scrolltop").fadeIn()
+        $(".scrollTop").fadeIn()
     }
 });
-
+*/
 
 //tarte au citron cookie 
