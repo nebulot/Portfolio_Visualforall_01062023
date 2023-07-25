@@ -61,39 +61,40 @@ body {
 
 .bottom {
     display: flex;
-
     z-index: 10000;
     position: fixed;
     bottom: 0;
     right: 24%;
-    cursor: pointer;
-    width: 190px;
+    cursor: pointer;   
     flex-direction: row;
-    padding-top: 10px;
+    }
 
-
-}
-
-.Btn {
+#scrolltop {
     background: #f61067;
     border: none;
     color: inherit;
-    pointer-events: auto;
+    cursor : pointer;
+    box-shadow: 0 3px 7px 0px #0085bd;
+}
+
+svg.arrow {
+    padding-top : 20px;
+    padding-left : 10px;
 }
 
 .btn-t {
     text-transform: uppercase;
     font-weight : bold;
-    width: 260%;
-    padding : 20px;
+    width: 208%;
+    padding : 10px;
 }
 
 @media (hover: hover) {
     
 }
 
-#scrolltop {
-    /*display: none;*/
+#scrollCookie {
+    display: none;
     display: flex;
     z-index: 10000;
     position: fixed;
@@ -489,7 +490,6 @@ body #topNav .active-link>a {
 
 h4:hover {
     color: #f61067;
-
 }
 
 .logo-image #topNav nav li a {

@@ -608,3 +608,16 @@ img.image-garden-visualisation:hover {
   vertical-align: unset;
 
 }
+
+/*Mentions Légales*/
+.display-5 {
+font-family:'Futura-pt', sans-serif;
+font-size: 1.5rem;
+
+}
+
+.display-7 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+ 
+}
