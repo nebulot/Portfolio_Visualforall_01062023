@@ -61,33 +61,31 @@ body {
 }
 
 .scrollTop {
-    background: #f61067;
+    background: rgba(246, 16, 103, 0.5);
     border: none;
     color: white;
-    cursor : pointer;
+    cursor: pointer;
     box-shadow: 0 3px 7px 0px #0085bd;
     z-index: 10000;
     position: fixed;
     bottom: 0;
-    right: 24%;         
-    transition : all 0.5s ease 0s;
+    right: 24%;
+    transition: all 0.5s ease 0s;
     text-transform: uppercase;
-    padding : 10px;
-    font-weight : bold;
-    display : flex;
-    flex-direction : row;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
     width: 9%;
 }
 
-.scrollTop:hover{
-    background-color : #0085bd;    
+.scrollTop:hover {
+    background-color: #0085bd;
 }
 
 
 
-@media (hover: hover) {
-    
-}
+@media (hover: hover) {}
 
 #scrollCookie {
     display: none;
@@ -114,8 +112,34 @@ body {
 
 .scrolltop-cookie {
     justify-content: center;
-
 }
+
+/*rotation du logo au passage de la souris*/
+
+@keyframes myrotate {
+    0% {
+        transform: rotate(0deg);
+        /*rotation de 0 degrés au début de l'animation*/
+    }
+
+    100% {
+        transform: rotate(359deg);
+        /*rotation de 359 degré à la fin de l'animation*/
+    }
+}
+
+img.rotate:hover {
+    animation: myrotate 1.5s infinite linear;
+    /*attribue l'animation nommée "myrotate" à la classe "rotate" au passage de la souris. L'animation dure 1.5 secondes et se répète indéfiniment, avec un déroulement linéraire.*/
+     transform: scale(-1.5);
+}
+
+.rotate {
+    cursor: pointer;
+    /*affiche un curseur en forme de main sur l'image lors du passage de la souris (facultatif)*/
+    transition: transform .1s;
+}
+
 
 #canvas {
     max-width: 1080px;

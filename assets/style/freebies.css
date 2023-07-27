@@ -1,6 +1,8 @@
 /*--Gallerie digitale et traditionnelles--*/
 
-
+video {
+  cursor:pointer;
+}
 
 .gallery-row {
   display: flex;
@@ -40,8 +42,9 @@ h2.description {
 }
 
 .form-title-wrapper {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  margin-left: 23px;
 }
 
 .form-title {
@@ -90,7 +93,10 @@ h2.description {
 
 input {
   width: 100%;
-  background-color: rgb(235, 235, 235);
+  background: #f7f1edc9;
+  padding: 1.1rem;
+  border-radius: 0.75rem;
+  border: 2px solid black;
 }
 
 .field-element {
@@ -98,7 +104,11 @@ input {
 }
 
 textarea {
-  background-color: rgb(235, 235, 235);
+  background: #f7f1edc9;
+  padding: 1.1rem;
+  border-radius: 0.75rem;
+  border: 2px solid black;
+  width: 100%;
 }
 
 
@@ -127,6 +137,8 @@ textarea {
 .form-wrapper,
 .form-title .react-form-contents {
   margin-top: 55px;
+  left: 1.25rem;
+  padding: 0.25rem;
 }
 
 .form-title {
@@ -159,8 +171,9 @@ textarea {
 .form-wrapper,
 .field-list,
 .field,
-.caption {
-  font-size: 18px;
+.caption-text {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 
@@ -212,10 +225,23 @@ label #title {
 
 
 /*utiliser transform ne fontionne pas sur element inline */
-.button_link,
+.button_link {
+  display: inline-block;
+  text-align: center;
+  background-color: #2f365f;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 42%;
+  margin-top: 2%;
+}
+
 .button_link-send {
+  width: 147px;
   height: auto;
-  width: auto;
+}
+
+.button_link .button_link-send {
   display: inline-block;
   background: #2f365f;
   color: #f7f1ed;
@@ -226,12 +252,10 @@ label #title {
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
-  transition: transform 0.15s ease-out, color 0.15s ease-out,
-    background-color 0.15s ease-out;
+  transition: transform 0.15s ease-out, color 0.15s ease-out, background-color 0.15s ease-out;
 }
 
-.button_link:hover,
-.button_link-send:hover {
+.button_link:hover .button_link-send {
   transform: translate(-6px, -6px);
   color: #f7f1ed;
   background: #0ae9bc;
@@ -256,7 +280,7 @@ label #title {
 
 a span {
   position: absolute;
-  color: #0ae9bc;
+  color: black;
   background: white;
   padding: 15px;
   border: 2px solid black;
@@ -611,13 +635,13 @@ img.image-garden-visualisation:hover {
 
 /*Mentions Légales*/
 .display-5 {
-font-family:'Futura-pt', sans-serif;
-font-size: 1.5rem;
+  font-family: 'Futura-pt', sans-serif;
+  font-size: 1.5rem;
 
 }
 
 .display-7 {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
- 
+
 }
