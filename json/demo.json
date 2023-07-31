@@ -1,0 +1,27 @@
+{
+    "title": "tutoriel json",
+    "content": "...",
+    "author": {
+        "firstname": "Elodie",
+        "lastname": "Nebulot",
+        "birthyear": 1986
+    },
+    "comments": [
+        {
+            "username": "John Doe",
+            "content": "Super tutoriel",
+            "replies": []
+        },
+        {
+            "username": "Jane Doe",
+            "content": " J'ai bien aimé ce tutoriel",
+            "replies": [
+                {
+                    "username": "John Doe",
+                    "content": "...",
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}
