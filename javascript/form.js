@@ -58,10 +58,10 @@ form.addEventListener('submit', e => {
 
     if (userLastname.classList.contains('is-valid') && userFirstname.classList.contains('is-valid') && userEmail.classList.contains('is-valid') && userMessage.classList.contains('is-valid')) {
         sendEmail();
-        showAlert('alert-success', 'Message sent !');
+        showAlert('alert-success', 'Bravo :) Votre message nous à bien été envoyé !');
         form.reset();
         allFormField.forEach(input => input.classList.remove('is-valid'));
-    } else showAlert('alert-danger', 'Please fill in all the fields correctly !');
+    } else showAlert('alert-danger', 'Bonjour, pouvez-vous remplir correctement les liens ci-dessous!');
 });
 
 // Emailjs
@@ -73,8 +73,8 @@ function sendEmail() {
         message: userMessage.value,
     };
 
-    const serviceID = 'service_mk6xxet';
-    const templateID = 'template_l08ew81';
+    const serviceID = 'service_8gizoii';
+    const templateID = 'template_b8gbuh1';
 
     emailjs
         .send(serviceID, templateID, templateParams)
