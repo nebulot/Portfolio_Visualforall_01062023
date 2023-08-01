@@ -58,6 +58,7 @@
     <!--styles CSS-->
     <link rel="stylesheet" href="/assets/style/styles.css">
     <link rel="stylesheet" href="/assets/style/freebies.css">
+    <link rel="stylesheet" href="/assets/bootstrap.css/bootstrap.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,9 +206,10 @@
                                     data-test="image-block-inline-outer-wrapper">
                                     <figure id="" class="sqs-block-image-figure intrinsic" style="max-width:407px;">
                                         <div id="" class="image-block-wrapper" data-animation-role="image">
-                                            <div id="background-wrap" class="sqs-image-shape-container-element has-aspect-ratio wrap"
+                                            <div id="background-wrap"
+                                                class="sqs-image-shape-container-element has-aspect-ratio wrap"
                                                 style="position:relative; padding-bottom: 140.17%; overflow:hidden;">
-                                                <a  href="#">
+                                                <a href="#">
                                                     <div id="">
                                                         <div class="bubble x1"></div>
                                                         <div class="bubble x2"></div>
@@ -221,13 +223,14 @@
                                                         <div class="bubble x10"></div>
                                                     </div>
 
-                                                    <img class="thumb-image pop-up-thumb loaded" alt="" data-image-dimensions="407x660"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="/assets/img/autoabstrait.png" data-type="image"
-                                                    style="left:0%; top:10%;width:96% ;height:96.651%; position:absolute;"
-                                                    data-image-resolution="650w">
+                                                    <img class="thumb-image pop-up-thumb loaded" alt=""
+                                                        data-image-dimensions="407x660"
+                                                        data-image-focal-point="0.5, 0.5" data-load="false"
+                                                        src="/assets/img/autoabstrait.png" data-type="image"
+                                                        style="left:0%; top:10%;width:96% ;height:96.651%; position:absolute;"
+                                                        data-image-resolution="650w">
                                                     <span>〠Bonjour, comment allez-vous ?〠</span>
-                                                    </a>
+                                                </a>
                                             </div>
                                         </div>
                                     </figure>
@@ -304,29 +307,35 @@
                                         style="width: 10% ;height:5%;" data-image-resolution="650w" />
                                 </div>
 
-                                <div class="form-inner-wrapper">
-                                    
-                                    <form action="https://formsubmit.co/visualforall.fr@gmail.com" method="POST" >
+                                <div class="form-inner-wrapper customForm">
 
-                                        <div id="" class="field-list clear">
+                                    <form novalidate>
+
+                                        <div id="" class="field-list clear ">
                                             <fieldset id="name" class="form-item fields name required">
-                                                <div class="field first-name">
-                                                    <label class="caption">
+                                                <div class="field first-name col-sm-6">
+                                                    <label class="caption" for="firstname">
                                                         <div class="V">
-                                                            <div class="">
+                                                            <div>
                                                                 <span class="caption-text">Nom</span>
                                                                 <span class="description required">(required)</span>
                                                             </div>
                                                         </div>
                                                     </label>
-                                                    <input class="field-element field-control" data-title="first"
+                                                    <input id="first" class="field-element form-control" data-title="first"
                                                         maxlength="30" aria-required="true" placeholder="Nom"
                                                         autocomplete="given-name" name="nom" type="text" />
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                        <div class="invalid-feedback">
+                                                            3-15 characters, - authorized.
+                                                        </div>
 
                                                 </div>
 
-                                                <div class="field last-name">
-                                                    <label class="caption">
+                                                <div class="field last-name col-sm-6">
+                                                    <label class="caption" for="lastname">
                                                         <div class="V">
                                                             <div class="">
                                                                 <span class="caption-text">Prénom</span>
@@ -334,10 +343,16 @@
                                                             </div>
                                                         </div>
                                                     </label>
-                                                    <input class="field-element field-control" name="name"
+                                                    <input id="last" class="field-element form-control" name="prénom"
                                                         x-autocompletetype="surname" type="text" aria-required="true"
                                                         placeholder="Prénom" data-title="last" maxlength="30"
                                                         spellcheck="false" />
+                                                        <div class="valid-feedback">
+                                                            Looks good!
+                                                        </div>
+                                                        <div class="invalid-feedback">
+                                                            3-15 characters, - authorized.
+                                                        </div>
                                                 </div>
                                             </fieldset>
 
@@ -350,35 +365,49 @@
                                                         </div>
                                                     </div>
                                                 </label>
-                                                <input id="email-field" class="field-element" autocomplete="email"
-                                                    name="email" type="email" spellcheck="false" aria-required="true"
-                                                    placeholder="Adresse email" />
+                                                <input id="email" class="field-element form-control"
+                                                    autocomplete="email" name="email" type="text" spellcheck="false"
+                                                    aria-required="true" placeholder="Adresse email" />
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid email.
+                                                    </div>
+                                                   
                                             </div>
 
                                             <div class="form-item field text required">
-                                                <label class="title" for="">
+                                                <label class="title" for="subject">
                                                     <div class="V">
-                                                        <div class="Y">
+                                                        <div class="y">
                                                             <span>Objet de la demande</span>
                                                             <span class="description required">(required)</span>
                                                         </div>
                                                     </div>
                                                 </label>
-                                                <input id="text-field" class="field-element text" aria-required="true"
+                                                <input id="text-field" name="sujet, question"
+                                                    class="field-element form-control text" aria-required="true"
                                                     placeholder="Sujet" type="text" />
                                             </div>
 
                                             <div id="textarea" class="form-item field textarea required">
-                                                <label class="title" aria-label="Text Area" for="">
+                                                <label class="title" aria-label="Text Area" for="message">
                                                     <div class="V">
                                                         <div class="Y"><span>Laissez votre message ici</span>
                                                             <span class="description required">(required)</span>
                                                         </div>
                                                     </div>
                                                 </label>
-                                                <textarea id="textarea-field" class="field-element" name="texte"
-                                                    placeholder="Message" cols="30" rows="10" aria-invalid="false"
-                                                    placeholder=""></textarea>
+                                                <textarea id="textarea-field" class="field-element form-control"
+                                                    name="texte" placeholder="Message" cols="30" rows="10"
+                                                    aria-invalid="false" placeholder=""></textarea>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        minimum 10 characters.
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="form-button-wrapper button_link form-button-wrapper--align-center">
@@ -386,9 +415,6 @@
                                                 class="button sqs-system-button  button_link-send sqs-editabme-button sqs-button-element--primary"
                                                 type="submit" value="Envoyer">
                                         </div>
-                                        
-
-
                                     </form>
                                 </div>
                             </div>
@@ -396,9 +422,14 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
+
+        <div class="modal_success">
+            <div class="modal_content">
+                <h2>Merci pour votre message.</h2>
+                <button class="btn" type="button" aria-label="close modal">Fermer</button>
+            </div>
+        </div>
 
 
 
@@ -517,13 +548,15 @@
                                 <div class="sqs-html-content">
                                     <h5 class="font-h5"> © 2023 VISUAL FOR ALL. ALL RIGHTS RESERVED.</h5>
 
-                                    <button onclick="scrollToTop()" class="scrollTop" class="Btn btn-s btn-scroll bottom">
+                                    <button onclick="scrollToTop()" class="scrollTop"
+                                        class="Btn btn-s btn-scroll bottom">
                                         <span class="btn-t">Scroll to top</span>
-                                        <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64" style="width :15%; padding:5px;"> 
-                                            <use class="sqs-use--icon" xlink:href="#arrow-icon" />                                       
-                                        </svg>                                            
+                                        <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64"
+                                            style="width :15%; padding:5px;">
+                                            <use class="sqs-use--icon" xlink:href="#arrow-icon" />
+                                        </svg>
                                     </button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -542,10 +575,11 @@
 
     <!--SVG Icones W3C-->
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
-        <symbol id="arrow-icon" viewBox="0 0 448 512" >
-            <path  d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/>
-        </symbol>       
-       
+        <symbol id="arrow-icon" viewBox="0 0 448 512">
+            <path
+                d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z" />
+        </symbol>
+
         <symbol id="email-icon" viewBox="0 0 64 64">
             <path d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z" />
         </symbol>
@@ -572,8 +606,17 @@
 
     <script src="/assets/web/assets/jquery/jquery.min.js"></script>
     <script src="/assets/bootstrap.js/bootstrap.min.js"></script>
-    <script src="/index.js"></script>
+    
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/form.js"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("tfaWYPiUmMjjyndfO");
+        })();
+    </script>
 
 
 

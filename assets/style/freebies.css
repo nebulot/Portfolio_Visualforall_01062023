@@ -176,8 +176,6 @@ textarea {
   padding-bottom: 10px;
 }
 
-
-
 .form-item {
   column-gap: 10px;
   display: flex;
@@ -223,6 +221,10 @@ label #title {
   width: 50%;
 }
 
+
+
+
+  
 
 /*utiliser transform ne fontionne pas sur element inline */
 .button_link {
