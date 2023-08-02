@@ -30,17 +30,10 @@
     <meta property="og:type" content="website">
     <meta property="og:description"
         content="Bienvenue sur le site de Visual For All. Créée par Elodie Nébulot, designeur graphique, illustratrice, conceptrice et développeuse d'application à Lyon.">
-    <meta property="og:image" contet="une image du logo">
+    <meta property="og:image" content="une image du logo">
     <meta property="og:image:width" content="1250">
     <meta property="og:image:height" content="599">
-
-
-    <!--<meta itemprop> commande universel-->
-    <meta itemprop="name" content="Visual For All a.k.a Elodie Nébulot">
-    <meta itemprop="url" content="https://www.visuaforall.fr">
-    <meta itemprop="description"
-        content="Bienvenue sur le site de Visual For All. Créée par Elodie Nébulot, designeur graphique, illustratrice, conceptrice et développeuse d'application à Lyon.">
-
+   
     <!--<meta name => twitter-->
     <meta name="twitter:title" content="Visual For All a.k.a Elodie Nébulot">
     <meta name="twitter:url" content="https://www.visuaforall.fr">
@@ -93,22 +86,21 @@
         }
     </style>
 
+    <!--Google analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1Z42KLL1P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-
+        gtag('config', 'G-N1Z42KLL1P');
+    </script>
 
 
 </head>
 
-<!--Google analytics-->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1Z42KLL1P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-N1Z42KLL1P');
-</script>
 
 
 <!--BODY-->
@@ -118,7 +110,7 @@
 
     <div id="scrollCookie">
         <div class="scrolltop-cookie"><img style="position:absolute; top:20%; left:20%; width:30px"
-                src="/assets/tools/biscuit.png"></div>
+                src="/assets/tools/biscuit.png" alt="bouton et logo des cookies"></div>
     </div>
 
 
@@ -171,7 +163,7 @@
                             </div>
                         </li>
 
-                        <li class="">
+                        <li>
                             <a href="https://www.etsy.com/fr/shop/VisualForAll" target="_blank">Shop</a>
                         </li>
 
@@ -333,7 +325,7 @@
                             afin de ne plus vous importuner lors de votre prochaine visite.<br>
                             Vous pouvez choisir d'être averti chaque fois qu'un cookie est transmis.<br>
                             <br>
-                            <br>                           
+                            <br>
                             <strong>Modifications</strong><br>
                             <br>
                             Cette politique de confidentialité peut être modifiée à l'occasion afin de maintenir la
@@ -348,13 +340,13 @@
                             consentement au traitement de vos données à tout moment via notre bouton - 🍪 -
                             dans le pied de page à droite.<br>
                             <br>
-                            <br>                            
+                            <br>
                             <strong>Contact</strong><br>
                             <br>
                             Si vous avez des questions à nous poser, n'hésiter pas à communiquer avec nous en utilisant
                             ce qui suit :<br>
                             visualforall.fr@gmail.com<br>
-                            <br>     
+                            <br>
                             Date d'entrée en vigueur : le 26 juillet 2023<br>
                             <br>
                             <strong>©2002-2023,DocumentsLégauxTM(Sequiter Inc.)</strong>
@@ -365,13 +357,13 @@
             </div>
         </div>
 
-        <!----gallery grid-collection-->
+        <!--gallery grid-collection-->
 
-        <section id="page" role="main" data-content-field="main-content">
+        <div id="page" role="main" data-content-field="main-content">
 
 
             <div id="page-" class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="">
-                <div id="" class="row sqs-row">
+                <div  class="row sqs-row">
                     <div class="col sqs-col-6 span-6">
                         <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="2">
                             <div class="sqs-block-content">
@@ -381,7 +373,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="extra-wrapper page-footer">
+            <div id="page-footer" class="sqs-layout  sqs-grid-12 columns-12 empty"
+                data-layout-label="Header Content : My Stuff" data-type="bloc-field">
+                <div class="row sqs-row"></div>
+            </div>
+        </div>
+
 
         <div class="page-divider"></div>
 
@@ -394,7 +394,7 @@
                         <div class="col sqs-col-6 span-6">
                             <div class="sqs-block  sqs-block-image block-image-linear ">
                                 <img class="block-image-rotate" src="/assets/img/iconeWebClean270822.png"
-                                    alt="Visual for All" style="width:87%; rotate:-90deg;">
+                                    alt="Visual for All">
                             </div>
                         </div>
 
@@ -419,6 +419,7 @@
                                     </a>
                                     <a href="/windows/confidentialite.html">
                                         <h4>Politique de confidentialité</h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +431,7 @@
                                     <div>
                                         <h4>Email</h4>
                                         <a class="sqs-svg-icon--wrapper email" href="mailto:visualforall.fr@gmail.com"
-                                            target="_blank">Visualforall.fr@gmail.com</a>
+                                            target="_blank">visualforall.fr@gmail.com</a>
                                         <h4>Téléphone</h4>
                                         <p>06.73.88.21.68</p>
                                     </div>
@@ -443,7 +444,7 @@
                                 <h3 class="footer-section-subtitle footer-font-style">Réseaux sociaux</h3>
                                 <div class="social-links links sqs-svg-icon--list"
                                     data-content-field="connected-accounts">
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper instagram"
                                             href="https://www.instagram.com/visualforall.fr" target="_blank">
                                             <div>
@@ -454,7 +455,7 @@
                                         </a>
                                     </div>
 
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper pinterest" href="" target="_blank">
                                             <div>
                                                 <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
@@ -464,7 +465,7 @@
                                         </a>
                                     </div>
 
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper linkedin"
                                             href="https://www.linkedin.com/in/nebulotelodie/" target="_blank">
                                             <div>
@@ -494,8 +495,7 @@
                                 <div class="sqs-html-content">
                                     <h5 class="font-h5"> © 2023 VISUAL FOR ALL. ALL RIGHTS RESERVED.</h5>
 
-                                    <button onclick="scrollToTop()" class="scrollTop"
-                                        class="Btn btn-s btn-scroll bottom">
+                                    <button onclick="scrollToTop()" class="scrollTop Btn btn-s btn-scroll bottom">
                                         <span class="btn-t">Scroll to top</span>
                                         <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64"
                                             style="width :15%; padding:5px;">

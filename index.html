@@ -31,16 +31,10 @@
     <meta property="og:type" content="website">
     <meta property="og:description"
         content="Bienvenue sur le site de Visual For All. Créée par Elodie Nébulot, designeur graphique, illustratrice, conceptrice et développeuse d'application à Lyon.">
-    <meta property="og:image" contet="une image du logo">
+    <meta property="og:image" content="une image du logo">
     <meta property="og:image:width" content="1250">
     <meta property="og:image:height" content="599">
 
-
-    <!--<meta itemprop> commande universel-->
-    <meta itemprop="name" content="Visual For All a.k.a Elodie Nébulot">
-    <meta itemprop="url" content="https://www.visuaforall.fr">
-    <meta itemprop="description"
-        content="Bienvenue sur le site de Visual For All. Créée par Elodie Nébulot, designeur graphique, illustratrice, conceptrice et développeuse d'application à Lyon.">
 
     <!--<meta name => twitter-->
     <meta name="twitter:title" content="Visual For All a.k.a Elodie Nébulot">
@@ -55,7 +49,7 @@
 
     <!--cookie-->
     <script src="/tarteaucitron/tarteaucitron.js"></script>
-    <script type="text/javascript">
+    <script>
         tarteaucitron.init({
           "privacyUrl": "", /* Privacy policy url */
           "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
@@ -141,14 +135,9 @@
     </style>
 
 
-
-
-
-</head>
-
 <!--Google analytics-->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1Z42KLL1P"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -157,6 +146,9 @@
   gtag('config', 'G-N1Z42KLL1P');
 </script>
 
+
+</head>
+
 <!--BODY-->
 
 <body id="collection"
@@ -164,7 +156,7 @@
 
     <div id="scrollCookie">
         <div class="scrolltop-cookie"><img style="position:absolute; top:20%; left:20%; width:30px"
-                src="/assets/tools/biscuit.png"></div>
+                src="/assets/tools/biscuit.png" alt="bouton et logo des cookies"></div>
     </div>
 
 
@@ -708,7 +700,7 @@
                         <div class="col sqs-col-6 span-6">
                             <div class="  sqs-block-image block-image-linear ">
                                 <img class="block-image-rotate" src="/assets/img/iconeWebClean270822.png"
-                                    alt="Visual for All" style="width:87%; rotate:-90deg;">
+                                    alt="Visual for All">
                             </div>
                         </div>
 
@@ -758,7 +750,7 @@
                                 <h3 class="footer-section-subtitle footer-font-style">Réseaux sociaux</h3>
                                 <div class="social-links links sqs-svg-icon--list"
                                     data-content-field="connected-accounts">
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper instagram"
                                             href="https://www.instagram.com/visualforall.fr" target="_blank">
                                             <div>
@@ -769,7 +761,7 @@
                                         </a>
                                     </div>
 
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper pinterest" href="" target="_blank">
                                             <div>
                                                 <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
@@ -779,7 +771,7 @@
                                         </a>
                                     </div>
 
-                                    <div id="svg-icon-rounded">
+                                    <div class="svg-icon-rounded">
                                         <a class="sqs-svg-icon--wrapper linkedin"
                                             href="https://www.linkedin.com/in/nebulotelodie/" target="_blank">
                                             <div>
@@ -810,7 +802,7 @@
                                     <h5 class="font-h5"> © 2023 VISUAL FOR ALL. ALL RIGHTS RESERVED.</h5>
 
                                     
-                                        <button onclick="scrollToTop()" class="scrollTop" class="Btn btn-s btn-scroll bottom">
+                                        <button onclick="scrollToTop()" class="scrollTop Btn btn-s btn-scroll bottom">
                                             <span class="btn-t">Scroll to top</span>
                                             <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64" style="width :15%; padding:5px;"> 
                                                 <use class="sqs-use--icon" xlink:href="#arrow-icon" />                                       

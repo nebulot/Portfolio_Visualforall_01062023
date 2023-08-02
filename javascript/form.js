@@ -1,9 +1,9 @@
 const containerPage = document.querySelector('.customForm');
 const form = document.querySelector('form');
-const userLastname = document.getElementById('first');
-const userFirstname = document.getElementById('last');
+const userLastname = document.getElementById('firstname');
+const userFirstname = document.getElementById('lastname');
 const userEmail = document.getElementById('email');
-const userMessage = document.getElementById('textarea-field');
+const userMessage = document.getElementById('message');
 const allFormField = document.querySelectorAll('.form-control');
 
 // REGEX

@@ -190,16 +190,6 @@ label {
   cursor: pointer;
 }
 
-.V {
-  display: inline-block;
-}
-
-.Y {
-  align-items: center;
-  column-gap: 1ex;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .form-wrapper .field-list .description {
   padding: .5em 0 .5em;
