@@ -241,7 +241,7 @@ a:active {
     outline: 0;
 }
 
-body a:hover {
+body a:hover, h4:hover {
     color: #f61067;
 }
 
@@ -512,9 +512,7 @@ body #topNav .active-link>a {
     color: #3c91e6;
 }
 
-h4:hover {
-    color: #f61067;
-}
+
 
 .logo-image #topNav nav li a {
     padding: 91px 0;
@@ -653,7 +651,7 @@ img[data-src] {
 
 .sqs-block-image .thumb-image-info {
     position: absolute;
-    width: 100%;
+    width: 95%;
     text-align: center;
     top: 50%;
     margin-top: -6%;
@@ -662,7 +660,7 @@ img[data-src] {
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
     max-width: none;
-    border: solid 5px black;
+    /*border: solid 5px black;*/
 }
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper img {
@@ -764,7 +762,7 @@ img[data-src] {
 
 .sqs-block-image .thumb-image-info h2 {
     color: #fff3f0;
-    font-size: 2.125rem;
+    font-size: 1.650rem;
 }
 
 .sqs-block-image .thumb-image-info p {
@@ -772,11 +770,18 @@ img[data-src] {
     font-size: 1rem;
 }
 
+h4.email, a.email {
+    background-repeat: no-repeat;
+    background-size: 10000px 2px;
+    background-position: -10000px 1.4em;
+}
 
-
-
-
-
+h4.email:hover, a.email:hover {
+    transition: background-position 2s ease-in-out;
+    background-image: linear-gradient(currentColor 50%, currentColor 50%);
+    background-position: 0px 1.4em;
+    width:90%;
+  }
 
 img[data-src] {
     opacity: 1;
