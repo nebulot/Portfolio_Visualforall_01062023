@@ -23,16 +23,13 @@ text-align : center;
   display : flex;
   flex-direction : column;
   justify-content: center;
-  width : 100%;
-  margin-left : 20%;
-}
-
-.block-color-button{
   display : flex;
   flex-direction: row;
   align-items: center;
   gap : 20px;
+ 
 }
+
 
 .row-margin {
   margin: 5% 0;
