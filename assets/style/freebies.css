@@ -1,7 +1,7 @@
 /*--Gallerie digitale et traditionnelles--*/
 
 video {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .gallery-row {
@@ -15,19 +15,55 @@ video {
 
 /*--contact--*/
 
+.html-fa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+  animation-name: fa-flip;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+  animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+  animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+  animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  font-size: 30px;
+}
+
+
+
 .leitmotiv {
-text-align : center;
+  margin: 0;
+  text-align: center;
+  font-size : 1.68rem;
 }
 
 .block-color {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  display : flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  gap : 20px;
- 
+  gap: 20px;
+
 }
 
 
@@ -237,7 +273,7 @@ label #title {
 
 
 
-  
+
 
 /*utiliser transform ne fontionne pas sur element inline */
 .button_link {
