@@ -65,10 +65,25 @@ video {
   gap: 20px;
 
 }
+.green {
+  color : #0ae9bc;
 
+}
 
 .row-margin {
   margin: 5% 0;
+}
+
+.style-text {
+  text-align: center;
+}
+
+.instagram-icon-block {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color : #0ae9bc;
+ font-size: 21px;
 }
 
 
@@ -345,7 +360,6 @@ a span {
   transform: scale(0) rotate(-12deg);
   opacity: 0;
   transition: all .25s;
-  bottom: 9px;
   right: 6px;
 }
 
