@@ -53,7 +53,6 @@
     <!--styles CSS-->
     <link rel="stylesheet" href="/assets/style/styles.css">
     <link rel="stylesheet" href="/assets/style/freebies.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
@@ -87,25 +86,14 @@
             touch-action: pan-x pan-y;
         }
     </style>
-
-    <!--Google analytics-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1Z42KLL1P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-N1Z42KLL1P');
-    </script>
-
+       
     <!--cookie-->
     
-    <script src="/tarteaucitron/tarteaucitron.js"></script>
+    <script src="tarteaucitron/tarteaucitron.js"></script>
 
     <script type="text/javascript">
     tarteaucitron.init({
-      "privacyUrl": "", /* Privacy policy url */
+      "privacyUrl": src="windows/confidentialite.html", /* Privacy policy url */
       "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
 
       "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
@@ -147,6 +135,10 @@
       "mandatory": true, /* Show a message about mandatory cookies */
       "mandatoryCta": true /* Show the disabled accept button when mandatory on */
     });
+
+    tarteaucitron.user.multiplegtagUa = ['G-N1Z42KLL1P', 'G-N1Z42KLL1P', 'G-N1Z42KLL1P'];
+        (tarteaucitron.job = tarteaucitron.job || []).push('multiplegtag','instagram','linkedin','pinterest');
+       
     </script>
 
 </head>

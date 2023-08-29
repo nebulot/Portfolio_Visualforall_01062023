@@ -10,8 +10,7 @@
     <!--balise meta viewport pour contrôler la mise en page sur mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--balise base pour définir l'URL de base à utiliser pour recomposer toutes les URL relatives du document-->
-    <base href="">
-
+  
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/Digitales/iconeWebClean270822.png">
     <link rel="canonical" href="https://www.visuaforall.fr">
 
@@ -89,26 +88,15 @@
         }
     </style>
 
-
-
-    <!--Google analytics-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1Z42KLL1P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-N1Z42KLL1P');
-    </script>
-
     <!--cookie-->
     
-    <script src="/tarteaucitron/tarteaucitron.js"></script>
+    <!--cookie-->
+    
+    <script src="tarteaucitron/tarteaucitron.js"></script>
 
     <script type="text/javascript">
     tarteaucitron.init({
-      "privacyUrl": "", /* Privacy policy url */
+      "privacyUrl": src="windows/confidentialite.html", /* Privacy policy url */
       "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
 
       "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
@@ -150,6 +138,10 @@
       "mandatory": true, /* Show a message about mandatory cookies */
       "mandatoryCta": true /* Show the disabled accept button when mandatory on */
     });
+
+    tarteaucitron.user.multiplegtagUa = ['G-N1Z42KLL1P', 'G-N1Z42KLL1P', 'G-N1Z42KLL1P'];
+        (tarteaucitron.job = tarteaucitron.job || []).push('multiplegtag','instagram','linkedin','pinterest');
+       
     </script>
 
 
