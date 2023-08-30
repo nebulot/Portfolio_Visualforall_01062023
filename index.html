@@ -5,13 +5,14 @@
 <head>
 
     <!--Cookie Tarteaucitron-->
-    <script src="https://tarteaucitron.io/load.js?domain=visualforall.fr&uuid=6a7e346a455cbfe2061971d92a93ecdc1e868898"></script>
+    <script
+        src="https://tarteaucitron.io/load.js?domain=visualforall.fr&uuid=6a7e346a455cbfe2061971d92a93ecdc1e868898"></script>
     <meta charset="utf-8">
     <!-- respecter la norme web internet explorer soit compatible-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--balise meta viewport pour contrôler la mise en page sur mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
 
     <link rel="shortcut icon" type="image/jpg" href="assets/img/Digitales/iconeWebClean270822.png">
     <link rel="canonical" href="https://www.visuaforall.fr">
@@ -49,58 +50,57 @@
     <script src="https://kit.fontawesome.com/b012d5ddf3.js" crossorigin="anonymous"></script>
 
     <!--cookie-->
-    
+
     <script src="tarteaucitron/tarteaucitron.js"></script>
 
     <script type="text/javascript">
-    tarteaucitron.init({
-      "privacyUrl": src="windows/confidentialite.html", /* Privacy policy url */
-      "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+        tarteaucitron.init({
+            "privacyUrl": "https://www.visualforall.fr/confidentialite.html", /* Privacy policy url */
+            /*"bodyPosition": "bottom",  or top to bring it as first element for accessibility */
 
-      "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
-      "cookieName": "tarteaucitron", /* Cookie name */
+            "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+            "cookieName": "tarteaucitron", /* Cookie name */
 
-      "orientation": "middle", /* Banner position (top - bottom) */
-   
-      "groupServices": false, /* Group services by category */
-      "showDetailsOnClick": true, /* Click to expand the description */
-      "serviceDefaultState": "wait", /* Default state (true - wait - false) */
-                       
-      "showAlertSmall": false, /* Show the small banner on bottom right */
-      "cookieslist": false, /* Show the cookie list */
-                       
-      "closePopup": false, /* Show a close X on the banner */
+            "orientation": "middle", /* Banner position (top - bottom) */
 
-      "showIcon": true, /* Show cookie icon to manage cookies */
-      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
-      "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+            "groupServices": false, /* Group services by category */
+            /*"showDetailsOnClick": true,  Click to expand the description 
+            "serviceDefaultState": "wait",  Default state (true - wait - false) */
 
-      "adblocker": false, /* Show a Warning if an adblocker is detected */
-                       
-      "DenyAllCta" : true, /* Show the deny all button */
-      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
-      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
-                       
-      "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+            "showAlertSmall": false, /* Show the small banner on bottom right */
+            "cookieslist": false, /* Show the cookie list */
 
-      "removeCredit": false, /* Remove credit link */
-      "moreInfoLink": true, /* Show more info link */
+            "closePopup": false, /* Show a close X on the banner */
 
-      "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
-      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+            "showIcon": false, /* Show cookie icon to manage cookies */
+            //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+            "iconPosition": "BottomLeft", /* BottomRight, BottomLeft, TopRight and TopLeft */
 
-      "cookieDomain": "www.visualforall.fr", /* Shared cookie for multisite */
-                      
-      "readmoreLink": "", /* Change the default readmore link */
+            "adblocker": false, /* Show a Warning if an adblocker is detected */
 
-      "mandatory": true, /* Show a message about mandatory cookies */
-      "mandatoryCta": true /* Show the disabled accept button when mandatory on */
-    });
+            "DenyAllCta": true, /* Show the deny all button */
+            "AcceptAllCta": true, /* Show the accept all button when highPrivacy on */
+            "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
 
-    tarteaucitron.user.multiplegtagUa = ['G-N1Z42KLL1P', 'G-N1Z42KLL1P', 'G-N1Z42KLL1P'];
-        (tarteaucitron.job = tarteaucitron.job || []).push('multiplegtag','instagram','linkedin','pinterest');
-       
-        
+            "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+            "removeCredit": false, /* Remove credit link */
+            "moreInfoLink": false, /* Show more info link */
+
+            "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+            "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+
+            /*"cookieDomain": "www.visualforall.fr",  Shared cookie for multisite */
+
+            "readmoreLink": "", /* Change the default readmore link */
+
+            "mandatory": true, /* Show a message about mandatory cookies */
+            /*"mandatoryCta": true /* Show the disabled accept button when mandatory on */
+        });
+
+        tarteaucitron.user.multiplegtagUa = 'G-N1Z42KLL1P';
+        // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
+        (tarteaucitron.job = tarteaucitron.job || []).push('multiplegtag', 'instagram', 'linkedin', 'pinterest');
     </script>
 
     <title>Accueil</title>
@@ -144,7 +144,7 @@
     </style>
 
 
-<!--Google analytics-->
+    <!--Google analytics-->
 
 
 
@@ -156,14 +156,20 @@
 <body id="collection"
     class="blog-sidebar-display-auto index-thumb-title-position-below index-item-layout-auto thumbnail-layout-basic-grid thumbnails-on-open-page-show-all hide-thumbnail-titles  layout-style-center page-borders-thin  gallery-page-controls-tiny-thumbnails  social-icon-style-normal   show-category-navigation   event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link    product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-pill medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-pill tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-5e7f9157e1a6fc55dd652b85 collection-type-page collection-layout-default homepage mobile-style-available logo-image has-primary-nav">
 
-     <!--cadre principal-->
+    <div id="scrollCookie">
+        <div class="scrolltop-cookie"><img style="position:absolute; top:20%; left:20%; width:30px"
+                src="assets/tools/biscuit.png" alt="bouton et logo des cookies"></div>
+    </div>
+
+    <!--cadre principal-->
     <div id="canvas">
         <!--navbar mobile  -->
         <!--navbar desktop-->
         <header id="header">
             <div id="logo" data-content-field="site-title">
                 <h1 class="logo" data-shrink-original-size="15" style="letter-spacing :0.0666667em">
-                    <a  href="index.html"><img class="rotate" src="assets/img/Digitales/iconeWebClean270822.png" alt="Logotype de la marque Visual For All"></a>
+                    <a href="index.html"><img class="rotate" src="assets/img/Digitales/iconeWebClean270822.png"
+                            alt="Logotype de la marque Visual For All"></a>
                 </h1>
             </div>
 
@@ -241,20 +247,24 @@
             space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"
             style="filter: brightness(88%)">
             <swiper-slide>
-                <img class="d-block w-100" src="assets/img/Contacts/autoabstrait.png" alt="Illustration représentant mon autoportrait imagé et abstrait">
+                <img class="d-block w-100" src="assets/img/Contacts/autoabstrait.png"
+                    alt="Illustration représentant mon autoportrait imagé et abstrait">
             </swiper-slide>
             <swiper-slide>
                 <img class="d-block w-100" src="assets/img/Digitales/crane-coloré-2.jpg"
                     alt="Illustration digitale d'un poulpe vert tacheté portant un bout de crane" data-slide-to="0">
             </swiper-slide>
             <swiper-slide>
-                <img class="d-block w-100" src="assets/img/Digitales/FlyerSharp.jpg" alt="Poster regroupant les différents travaux du designer Sharp">
+                <img class="d-block w-100" src="assets/img/Digitales/FlyerSharp.jpg"
+                    alt="Poster regroupant les différents travaux du designer Sharp">
             </swiper-slide>
             <swiper-slide>
-                <img class="d-block w-100" src="assets/img/Illustration/hibou.jpg" alt="Illustration traditionnelle faite au crayon et à l'encre d'un hibou">
+                <img class="d-block w-100" src="assets/img/Illustration/hibou.jpg"
+                    alt="Illustration traditionnelle faite au crayon et à l'encre d'un hibou">
             </swiper-slide>
             <swiper-slide>
-                <img class="d-block w-100" src="assets/img/GB/autoportrait.jpg" alt="Fresque réalisée pour le restaurant Garden Bistro de Lyon">
+                <img class="d-block w-100" src="assets/img/GB/autoportrait.jpg"
+                    alt="Fresque réalisée pour le restaurant Garden Bistro de Lyon">
             </swiper-slide>
             <div class="autoplay-progress" slot="container-end">
                 <svg viewBox="0 0 48 48">
@@ -297,17 +307,22 @@
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
                                                 <a class="thumb-image-link">
                                                     <div>
-                                                        <img class="thumb-image " alt="Photo d'un sticker de la santa maria " data-image-dimensions="1141x1294"
-                                                        data-image-focal-point="0.5, 0.5" data-load="false"
-                                                        src="assets/img/Digitales/mockupstickersvierge.jpg" data-type="image"
-                                                        style="left:0%; top:0%;width:100% ;height:100%; position:absolute;"
-                                                        data-image-resolution="500w">
+                                                        <img class="thumb-image "
+                                                            alt="Photo d'un sticker de la santa maria "
+                                                            data-image-dimensions="1141x1294"
+                                                            data-image-focal-point="0.5, 0.5" data-load="false"
+                                                            src="assets/img/Digitales/mockupstickersvierge.jpg"
+                                                            data-type="image"
+                                                            style="left:0%; top:0%;width:100% ;height:100%; position:absolute;"
+                                                            data-image-resolution="500w">
                                                     </div>
                                                 </a>
 
-                                                <img class="thumb-image " alt="Illustration digitale d'une sainte tattouée et dénudée avec un filtre néon" data-image-dimensions="1141x1294"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/soustraction.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Illustration digitale d'une sainte tattouée et dénudée avec un filtre néon"
+                                                    data-image-dimensions="1141x1294" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/soustraction.jpg"
+                                                    data-type="image"
                                                     style="left:-0.106059%; top:0%;width:97.212% ;height:97%; position:absolute;"
                                                     data-image-resolution="500w">
                                             </div>
@@ -329,16 +344,19 @@
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
 
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/Cn1p6f0okXX/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/Cn1p6f0okXX/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">SANTA MARIA</h2>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
 
-                                                <img class="thumb-image " alt="Illustration digitale d'une sainte tattouée et dénudée fond noir" data-image-dimensions="2500x2843"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/viergeblack.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Illustration digitale d'une sainte tattouée et dénudée fond noir"
+                                                    data-image-dimensions="2500x2843" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/viergeblack.jpg"
+                                                    data-type="image"
                                                     style="left:-0.0996252%; top:0%;width:97.212% ;height:97%;position:absolute; "
                                                     data-image-resolution="500w">
                                             </div>
@@ -360,19 +378,24 @@
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
                                                 <a class="thumb-image-link">
-                                                    <div >                                                        
-                                                            <img class="thumb-image " alt="Photo d'un sticker de la santa maria" data-image-dimensions="1141x1294"
+                                                    <div>
+                                                        <img class="thumb-image "
+                                                            alt="Photo d'un sticker de la santa maria"
+                                                            data-image-dimensions="1141x1294"
                                                             data-image-focal-point="0.5, 0.5" data-load="false"
-                                                            src="assets/img/Digitales/mockupstickersvierge.jpg" data-type="image"
+                                                            src="assets/img/Digitales/mockupstickersvierge.jpg"
+                                                            data-type="image"
                                                             style="left:0%; top:0%;width:100% ;height:100%; position:absolute;"
-                                                            data-image-resolution="500w">                                                  
+                                                            data-image-resolution="500w">
 
                                                     </div>
-                                                    
+
                                                 </a>
-                                                <img class="thumb-image " alt="Illustration digitale d'une sainte tattouée et dénudée fond blanc" data-image-dimensions="2500x2843"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/viergewhite.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Illustration digitale d'une sainte tattouée et dénudée fond blanc"
+                                                    data-image-dimensions="2500x2843" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/viergewhite.jpg"
+                                                    data-type="image"
                                                     style="left:-0.0996252%; top:0%;width:97.212% ;height:97%;position:absolute; "
                                                     data-image-resolution="500w">
                                             </div>
@@ -396,16 +419,19 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom:98.253273010%; overflow: hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/Cdvui4vqEuO/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/Cdvui4vqEuO/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">La Belle au Bois dormant</h2>
                                                         <p class="image-info-write">Projet digital</p>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image" alt="Photographie de la couverture de la Belle au Bois Dormant version digitale" data-image-dimensions="1772x1772"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/labellemockup.jpg" data-type="image"
+                                                <img class="thumb-image"
+                                                    alt="Photographie de la couverture de la Belle au Bois Dormant version digitale"
+                                                    data-image-dimensions="1772x1772" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/labellemockup.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%; position:absolute;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -427,16 +453,19 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative;padding-bottom:98.253273010%; overflow: hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/Cd7hbG_oOtU/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/Cd7hbG_oOtU/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">La Belle au Bois dormant</h2>
                                                         <p class="image-info-write">Projet digital</p>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image" alt="Photographie de la couverture de la Belle au Bois Dormant version illustrée à l'aquarelle et acrylique" data-image-dimensions="1370x1575"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Illustration/labelleillustre.jpg" data-type="image"
+                                                <img class="thumb-image"
+                                                    alt="Photographie de la couverture de la Belle au Bois Dormant version illustrée à l'aquarelle et acrylique"
+                                                    data-image-dimensions="1370x1575" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Illustration/labelleillustre.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:-0.48824%;width:97% ;height:97%; position:absolute;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -459,15 +488,18 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom:98.253273010%; overflow: hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/Cl8yjTSo1rl/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/Cl8yjTSo1rl/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Projet Halloween</h2>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Illustration fantôme d'halloween retravaillée en format digital " data-image-dimensions="1772x1772"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/redbubblehallo.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Illustration fantôme d'halloween retravaillée en format digital "
+                                                    data-image-dimensions="1772x1772" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/redbubblehallo.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%; position:absolute;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -493,12 +525,14 @@
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Flyer exposition </h2>
                                                         <p class="image-info-write">Projet Albretch DÜRER</p>
-                                                        
+
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Photographie du flyer recto et verso de l'exposition Albretch Durer" data-image-dimensions="1370x1575"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/flyersAlbretch.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Photographie du flyer recto et verso de l'exposition Albretch Durer"
+                                                    data-image-dimensions="1370x1575" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/flyersAlbretch.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%; position:absolute; object-fit:cover;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -520,16 +554,19 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/CrG1lv8Ix_m/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/CrG1lv8Ix_m/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Animation GIF</h2>
                                                         <h2 class="image-info-write">Jacky</h2>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Réalisation d'un GIF (image animée) avec Jacky, berger australien" data-image-dimensions="1141x1294"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/Jacky-chan.gif" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Réalisation d'un GIF (image animée) avec Jacky, berger australien"
+                                                    data-image-dimensions="1141x1294" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/Jacky-chan.gif"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%; position:absolute;object-fit:cover;"
                                                     data-image-resolution="500w">
                                             </div>
@@ -550,15 +587,18 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/CNALC7ynY0R/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/CNALC7ynY0R/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Le poulpe Roger</h2>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Ma mascotte Roger le poule, en version digitale" data-image-dimensions="2500x2843"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/cranecoloré.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Ma mascotte Roger le poule, en version digitale"
+                                                    data-image-dimensions="2500x2843" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/cranecoloré.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%;position:absolute; object-fit:cover; "
                                                     data-image-resolution="500w">
                                             </div>
@@ -579,16 +619,19 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative; padding-bottom: 113.40929412841797%; overflow:hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/CUc8_dNIrYt/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/CUc8_dNIrYt/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Atelier</h2>
                                                         <p class="image-info-write">"Custom ta board"</p>
                                                         <p class="image-info-write">Voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Ma mascotte en version illustration sur une planche de skateboard en bois brut" data-image-dimensions="2500x2843"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Illustration/rogerskate.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Ma mascotte en version illustration sur une planche de skateboard en bois brut"
+                                                    data-image-dimensions="2500x2843" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Illustration/rogerskate.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%;position:absolute;object-fit:cover; "
                                                     data-image-resolution="500w">
                                             </div>
@@ -614,17 +657,20 @@
                                                 style="position:relative;padding-bottom:54.302103250478005%; overflow: hidden;">
                                                 <a class="thumb-image-link">
                                                     <div>
-                                                        <img class="thumb-image" alt="Réalisation d'un motif sur fond blanc" data-image-dimensions="2500x1667"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/motif2.jpg" data-type="image"
-                                                    style="left:0%; top:0%;width:100% ;height:100%;position:absolute;"
-                                                    data-image-resolution="750w">
+                                                        <img class="thumb-image"
+                                                            alt="Réalisation d'un motif sur fond blanc"
+                                                            data-image-dimensions="2500x1667"
+                                                            data-image-focal-point="0.5, 0.5" data-load="false"
+                                                            src="assets/img/Digitales/motif2.jpg" data-type="image"
+                                                            style="left:0%; top:0%;width:100% ;height:100%;position:absolute;"
+                                                            data-image-resolution="750w">
                                                     </div>
-                                                    
+
                                                 </a>
-                                                <img class="thumb-image" alt="Réalisation d'un motif sur fond bleu" data-image-dimensions="2500x1667"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/motif1.jpg" data-type="image"
+                                                <img class="thumb-image" alt="Réalisation d'un motif sur fond bleu"
+                                                    data-image-dimensions="2500x1667" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/motif1.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%;position:absolute;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -651,9 +697,11 @@
                                                         <p class="image-info-write">Travail sous Illustrator</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image " alt="Montage du motif précédent, pour la réalisation d'un fond d'écran" data-image-dimensions="2500x3397"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/motif.jpg" data-type="image"
+                                                <img class="thumb-image "
+                                                    alt="Montage du motif précédent, pour la réalisation d'un fond d'écran"
+                                                    data-image-dimensions="2500x3397" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/motif.jpg"
+                                                    data-type="image"
                                                     style="left:0%; top:0%;width:97% ;height:97%;position:absolute;"
                                                     data-image-resolution="750w">
                                             </div>
@@ -674,17 +722,19 @@
                                         <div class="image-block-wrapper" data-animation-role="image">
                                             <div class="sqs-image-shape-container-element has-aspect-ratio"
                                                 style="position:relative;overflow: hidden;">
-                                                <a class="thumb-image-link" href="https://www.instagram.com/p/CN-GIihH5Kq/">
+                                                <a class="thumb-image-link"
+                                                    href="https://www.instagram.com/p/CN-GIihH5Kq/">
                                                     <div class="thumb-image-info">
                                                         <h2 class="image-info-write">Poster Martin Sharp</h2>
                                                         <p class="image-info-write">Hommage à ...</p>
                                                         <p class="image-info-write">voir plus</p>
                                                     </div>
                                                 </a>
-                                                <img class="thumb-image" alt="Poster regroupant les différents travaux du designer Sharp" data-image-dimensions="2399x3135"
-                                                    data-image-focal-point="0.5, 0.5" data-load="false"
-                                                    src="assets/img/Digitales/posterSharp.jpg" data-type="image"
-                                                    style="left:0%; top:5% ;width:97% ;height:100%;"
+                                                <img class="thumb-image"
+                                                    alt="Poster regroupant les différents travaux du designer Sharp"
+                                                    data-image-dimensions="2399x3135" data-image-focal-point="0.5, 0.5"
+                                                    data-load="false" src="assets/img/Digitales/posterSharp.jpg"
+                                                    data-type="image" style="left:0%; top:5% ;width:97% ;height:100%;"
                                                     data-image-resolution="750w">
                                             </div>
                                         </div>
@@ -729,7 +779,7 @@
                                     <a href="windows/contact.html">
                                         <h4 class="email">Contact</h4>
                                     </a>
-                                    <a  href="windows/freebies.html">
+                                    <a href="windows/freebies.html">
                                         <h4 class="email">Freebies</h4>
                                     </a>
                                     <a href="windows/textlegal.html">
@@ -813,14 +863,15 @@
                                 <div class="sqs-html-content ">
                                     <h5 class="font-h5"> © 2023 VISUAL FOR ALL. ALL RIGHTS RESERVED.</h5>
 
-                                    
-                                        <button onclick="scrollToTop()" class="scrollTop Btn btn-s btn-scroll bottom">
-                                            <span class="btn-t">Scroll to top</span>
-                                            <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64" style="width :15%; padding:5px;"> 
-                                                <use class="sqs-use--icon" xlink:href="#arrow-icon" />                                       
-                                            </svg>                                            
-                                        </button>
-                                   
+
+                                    <button onclick="scrollToTop()" class="scrollTop Btn btn-s btn-scroll bottom">
+                                        <span class="btn-t">Scroll to top</span>
+                                        <svg class="social-links sqs-svg-icon--social" viewBox="0 0 64 64"
+                                            style="width :15%; padding:5px;">
+                                            <use class="sqs-use--icon" xlink:href="#arrow-icon" />
+                                        </svg>
+                                    </button>
+
                                 </div>
 
                             </div>
@@ -840,8 +891,9 @@
 
     <!--SVG Icones W3C-->
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
-        <symbol id="arrow-icon" viewBox="0 0 448 512" >
-            <path  d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/>
+        <symbol id="arrow-icon" viewBox="0 0 448 512">
+            <path
+                d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z" />
         </symbol>
 
         <symbol id="email-icon" viewBox="0 0 64 64">
@@ -872,7 +924,7 @@
     <script src="assets/bootstrap.js/bootstrap.min.js"></script>
     <script src="assets/swipper/swipper-element-bundle.min.js"></script>
     <script src="javascript/index.js"></script>
-    
+
 
 
     <!-- Initialize Swiper -->
