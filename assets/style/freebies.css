@@ -52,7 +52,7 @@ video {
 .leitmotiv {
   margin: 0;
   text-align: center;
-  font-size : 1.68rem;
+  font-size: 1.68rem;
 }
 
 .block-color {
@@ -65,8 +65,9 @@ video {
   gap: 20px;
 
 }
+
 .green {
-  color : #0ae9bc;
+  color: #0ae9bc;
 
 }
 
@@ -79,11 +80,11 @@ video {
 }
 
 .instagram-icon-block {
-  display : flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color : #0ae9bc;
- font-size: 21px;
+  color: #0ae9bc;
+  font-size: 21px;
 }
 
 
@@ -711,4 +712,57 @@ img.image-garden-visualisation:hover {
 .display-7 {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .scrollTop {
+    width: 38%;
+    right: 32%;
+  }
+  
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-row {
+    display:flex;
+    flex-direction:column;
+    justify-content :center;
+  }
+  .links {
+    flex-direction : row;
+    margin: 0 0 12px 23px;
+  }
+
+  .svg-icon-rounded {
+    margin: 0px 10px;
+    
+  }
+
+ .sqs-col-6, .sqs-col-4 {
+    width: 100%;
+  }
+
+  .block-image-rotate{
+    display : none;
+  }
+
+  .carrou {
+    width : 40%;
+  }
+  swiper-slide img {
+    height : 306px;
+  }
+
+  .layout-style-center #topNav nav {
+    display :none;
+  }
+
+  .logo-image .logo img {
+    display : none;
+  }
+
+ 
+
 }
