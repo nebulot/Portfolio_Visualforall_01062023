@@ -714,55 +714,75 @@ img.image-garden-visualisation:hover {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-device-width: 770px) and (max-device-width: 810px) {
+  .carrou {
+    width: 40%;
+  }
+}
+
+@media (max-width: 769px) {
   .scrollTop {
     width: 38%;
     right: 32%;
   }
-  
+
 
   #footer {
     display: flex;
     flex-direction: column;
   }
+
   .gallery-row {
-    display:flex;
-    flex-direction:column;
-    justify-content :center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   .links {
-    flex-direction : row;
+    flex-direction: row;
     margin: 0 0 12px 23px;
   }
 
   .svg-icon-rounded {
     margin: 0px 10px;
-    
+
   }
 
- .sqs-col-6, .sqs-col-4 {
+  .sqs-col-6,
+  .sqs-col-4 {
     width: 100%;
   }
 
-  .block-image-rotate{
-    display : none;
+  .hidden {
+    display:none;
+  }
+  .carrou {
+    width: 40%;
   }
 
-  .carrou {
-    width : 40%;
-  }
   swiper-slide img {
-    height : 306px;
+    height: 306px;
   }
 
   .layout-style-center #topNav nav {
-    display :none;
+    display: none;
   }
 
   .logo-image .logo img {
-    display : none;
+    display: none;
   }
 
- 
+  h2.description {
+    line-height: 1em;    
+  }
+
+  .display-7 {
+    font-size : 0.85em;
+  }
+
+
+
+
+
 
 }
