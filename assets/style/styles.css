@@ -241,7 +241,7 @@ a:active {
     outline: 0;
 }
 
-body a:hover, h4:hover {
+body a:hover, h4.email:hover {
     color: #f61067;
 }
 
