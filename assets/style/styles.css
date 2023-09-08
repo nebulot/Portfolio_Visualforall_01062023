@@ -66,17 +66,15 @@ body {
     color: white;
     cursor: pointer;
     box-shadow: 0 3px 7px 0px #0085bd;
-    z-index: 10000;
+    z-index: 1000;
     position: fixed;
     bottom: 0;
     right: 24%;
     transition: all 0.5s ease 0s;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 7px;
     font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    width: 9%;
+    width: 10%;
 }
 
 .scrollTop:hover {
@@ -241,7 +239,8 @@ a:active {
     outline: 0;
 }
 
-body a:hover, h4.email:hover {
+body a:hover,
+h4.email:hover {
     color: #f61067;
 }
 
@@ -380,15 +379,11 @@ swiper-slide img {
 .bigdiv {
     position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 557px;
-    right: 280px;
-    height: 166px;
-    width: 970px;
+    top: 300px;
+    height: 140px;
     margin: 0 auto;
-    z-index: 11;
 }
 
 .slogan {
@@ -397,7 +392,18 @@ swiper-slide img {
 
 .carrou {
     justify-content: center;
+    z-index: 2000;
+    position: absolute;
+    top : 300px;
+    width : 50%;
+}
 
+.col-lg-4, .col-md-6 {
+position: absolute;
+justify-content: center;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
 }
 
 
@@ -406,14 +412,6 @@ swiper-slide img {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 37.333333%;
         max-width: 37.333333%;
-    }
-}
-
-@media (min-width: 768px) {
-    .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
     }
 }
 
@@ -632,7 +630,7 @@ img[data-src] {
     width: 30px;
     box-shadow: -25px 26px 0 1.7px #0ae9bc, -38px 18px 0 1.7px #0ae9bc, -38px 34px 0 2px #0ae9bc;
     left: 74px;
-    transform : rotate(-90deg);
+    transform: rotate(-90deg);
     bottom: -28px;
 }
 
@@ -669,7 +667,7 @@ img[data-src] {
 
 .block-image-rotate {
     width: 87%;
-    transform : rotate(-90deg);
+    transform: rotate(-90deg);
 
 }
 
@@ -770,18 +768,20 @@ img[data-src] {
     font-size: 1rem;
 }
 
-h4.email, a.email {
+h4.email,
+a.email {
     background-repeat: no-repeat;
     background-size: 10000px 2px;
     background-position: -10000px 1.4em;
 }
 
-h4.email:hover, a.email:hover {
+h4.email:hover,
+a.email:hover {
     transition: background-position 2s ease-in-out;
     background-image: linear-gradient(currentColor 50%, currentColor 50%);
     background-position: 0px 1.4em;
-    width:90%;
-  }
+    width: 90%;
+}
 
 img[data-src] {
     opacity: 1;
@@ -868,7 +868,7 @@ p {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6em;
-    font-size:0.8rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 0 1em;
@@ -961,7 +961,6 @@ svg:not(:root) {
 
 .svg-icon-rounded:hover {
     background-color: #f61067;
-
 }
 
 .font-h5 {

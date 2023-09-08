@@ -87,7 +87,9 @@ video {
   font-size: 21px;
 }
 
-
+.image-twin {
+  width:10%; 
+}
 
 button,
 input,
@@ -296,15 +298,22 @@ label #title {
 
 
 /*utiliser transform ne fontionne pas sur element inline */
-.button_link {
+.button_link, .button_link2 {
   display: inline-block;
   text-align: center;
   background-color: #2f365f;
   border-radius: 0.75rem;
   text-decoration: none;
-  cursor: pointer;
-  margin-left: 42%;
+  cursor: pointer;  
   margin-top: 2%;
+}
+
+.button_link {
+  margin-left: 30%;
+}
+
+.button_link2 {
+  margin-left: 40%;
 }
 
 .button_link-send {
@@ -312,7 +321,7 @@ label #title {
   height: auto;
 }
 
-.button_link .button_link-send {
+.button_link .button_link-send,  .button_link2 .button_link-send {
   display: inline-block;
   background: #2f365f;
   color: #f7f1ed;
@@ -326,7 +335,7 @@ label #title {
   transition: transform 0.15s ease-out, color 0.15s ease-out, background-color 0.15s ease-out;
 }
 
-.button_link:hover .button_link-send {
+.button_link:hover .button_link-send, .button_link2:hover .button_link-send {
   transform: translate(-6px, -6px);
   color: #f7f1ed;
   background: #0ae9bc;
@@ -648,7 +657,7 @@ a:focus span {
   top: -0%;
   left: 90px;
   width: 2px;
-  height: 27%;
+  height: 25%;
   background-color: #1f1f1f;
   animation: 1.8s linear slidein;
   z-index: 2;
@@ -721,17 +730,59 @@ img.image-garden-visualisation:hover {
   font-size: 1rem;
 }
 
-@media screen and (min-device-width: 770px) and (max-device-width: 810px) {
+@media screen and (min-device-width: 781px) and (max-device-width: 810px) {
   .carrou {
-    width: 40%;
+    width: 169%;
+    right:82%;
+    top:185px;
+  }
+  
+
+  .button_link {
+    margin-left: 25%;
+  }
+
+  .button_link2{
+    margin-left: 40%;
+  }
+
+ 
+
+  .block-image-linear::before {
+    left: 30px;
+  }
+
+  #topNav nav li {
+    margin-right: 25px;
+  }
+
+  #topNav nav,
+  #topNav ul,
+  #topNav li,
+  #topNav a {
+    font-size: 14px;
+  }
+
+  .bigdiv {
+    right: -61px;
+  }
+
+  [class*="sqs-col"] .sqs-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .display-7 {
+    font-size: 0.8rem;
+    padding: 0 18px;
   }
 }
 
-@media (max-width: 769px) {
-  .scrollTop {
-    width: 38%;
-    right: 32%;
-  }
+@media (max-width: 780px) {
+ .scrollTop {
+  width: 32%;
+  right: 36%;
+ }
 
 
   #footer {
@@ -755,8 +806,10 @@ img.image-garden-visualisation:hover {
 
   }
 
+  .sqs-col-7,
   .sqs-col-6,
-  .sqs-col-4 {
+  .sqs-col-4,
+  .sqs-col-5 {
     width: 100%;
   }
 
@@ -764,8 +817,16 @@ img.image-garden-visualisation:hover {
     display: none;
   }
 
+  .bigdiv {
+    width :700px;
+    right: 36px;
+    top: 400px;
+
+  }
   .carrou {
-    width: 40%;
+    width: 24%;
+    top: 20px;
+    right: 60px;
   }
 
   swiper-slide img {
@@ -786,6 +847,7 @@ img.image-garden-visualisation:hover {
 
   .display-7 {
     font-size: 0.85em;
+    padding-top: 10px;
   }
 
   .sqs-block-pannel2 {
@@ -812,12 +874,45 @@ img.image-garden-visualisation:hover {
     margin-bottom: 0px;
   }
 
-  h4.email, h3.footer-font-style , p.email, a.email{
+  h4.email,
+  h3.footer-font-style,
+  p.email,
+  a.email {
     display: flex;
     justify-content: center;
   }
 
+  #block-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button_link {
+    margin-left: 16%;
+  }
+
+  .button_link2 {
+    margin-left: 30%;
+  }
 
 
 
+  #name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #firstname,
+  #lastname {
+    width: 80%;
+  }
+
+  .sqs-block-image .thumb-image-info h2 {
+    color: #fff3f0;
+    font-size: 0.8rem;
+  }
+
+  .image-twin {
+    width:38%;
+  }
 }
