@@ -393,9 +393,10 @@ swiper-slide img {
 .carrou {
     justify-content: center;
     z-index: 2000;
-    position: absolute;
+    position: relative;
     top : 300px;
     width : 50%;
+    
 }
 
 .col-lg-4, .col-md-6 {

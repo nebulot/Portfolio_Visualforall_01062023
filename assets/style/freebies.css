@@ -732,9 +732,9 @@ img.image-garden-visualisation:hover {
 
 @media screen and (min-device-width: 781px) and (max-device-width: 810px) {
   .carrou {
-    width: 169%;
-    right:82%;
-    top:185px;
+    width: 50%;
+    top: 283px;
+    left: 12%;
   }
   
 
@@ -777,6 +777,8 @@ img.image-garden-visualisation:hover {
     padding: 0 18px;
   }
 }
+
+/*carrou à partir largeur 400px il y a écart*/
 
 @media (max-width: 780px) {
  .scrollTop {
@@ -826,7 +828,7 @@ img.image-garden-visualisation:hover {
   .carrou {
     width: 24%;
     top: 20px;
-    right: 60px;
+    left: 46%;
   }
 
   swiper-slide img {
