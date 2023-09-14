@@ -5,6 +5,17 @@ function scrollToTop(){
     window.scrollTo(0, 'slow');     
 };
 
+/*///////////////////////navbar/////////////////////////////*/
+/*hamburger */
+const hamburger = document.getElementById("hamburger");
+hamburger.onclick = () => {
+  hamburger.classList.toggle("open");
+  const navbar = document.getElementById("nav_bar");
+    navbar.classList.toggle("slide");  
+  document.body.classList.toggle("noScroll");
+}
+
+
 
 
 

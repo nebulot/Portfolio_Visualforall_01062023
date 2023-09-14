@@ -199,11 +199,9 @@ footer::after,
 }
 
 .social-links .sqs-svg-icon--wrapper {
-
     width: 25px;
     height: 25px;
     margin: 7px 0px 0px 8px;
-
 }
 
 .svg-icon-rounded {
@@ -217,12 +215,9 @@ footer::after,
     box-shadow: 0 3px 7px 0px;
 }
 
-
-
 a {
     text-decoration: none;
     color: #0085bd;
-
 }
 
 a:hover {
@@ -252,8 +247,6 @@ body a,
 body a:visited {
     color: #000;
 }
-
-
 
 article,
 aside,
@@ -299,6 +292,44 @@ h6 {
 .extra-wrapper {
     margin-top: 15px;
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    margin-top : 6px;
+    transition: all 0.5s ease;
+  }
+  
+  
+  .line { 
+    width: 35px;
+    height: 4px;
+    margin: 3px 0;
+    transition: all 0.7s;
+    background: #0ae9bc;
+    border-radius: 5px;
+  }
+  
+  .open .line {
+    background-color: #0ae9bc;
+  }
+  
+  .open .line1 {
+    transform: translateY(370%) rotate(-45deg);
+  }
+  
+  .open .line2,
+  .open .line3 {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  
+  .open .line4 {
+    transform: translateY(-370%) rotate(45deg);
+  }
+ 
 
 
 
@@ -392,7 +423,7 @@ swiper-slide img {
 
 .carrou {
     justify-content: center;
-    z-index: 2000;
+    z-index: 5;
     position: relative;
     top : 300px;
     width : 50%;

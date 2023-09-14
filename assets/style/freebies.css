@@ -359,8 +359,6 @@ label #title {
   }
 }
 
-
-
 a span {
   position: absolute;
   color: black;
@@ -376,13 +374,13 @@ a span {
   transition: all .25s;
   right: 6px;
 }
-
-
 a:hover span,
 a:focus span {
   transform: scale(1) rotate(0);
   opacity: 1;
 }
+
+
 
 
 
@@ -819,6 +817,54 @@ img.image-garden-visualisation:hover {
     display: none;
   }
 
+.layout-style-center #topNav nav,
+.layout-style-center #topNav ul,
+.layout-style-center #topNav li {
+    display: block;    
+}
+
+  .hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .nav-bar {
+    position: absolute;
+    z-index :20;
+    top: 80px;
+    left:-318px;
+    width: 150%;
+    height:200%;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: rgba(61, 90, 91, 0.8);
+    transition: transform 0.5s ease-out;
+  }
+
+  .nav-bar li, .dropbtn {
+    padding-top : 10px;
+  }
+  .nav-bar li a:hover,
+  .folder-collection:hover,
+  .dropbtn:hover {
+    border-radius: 0;
+    transform : none;
+  }
+  .dropbtn,
+  .folder-collection,
+  .page-collection {
+    border-radius: 0;
+  }
+
+  .slide {
+    transform: translate(100%);
+  }
+ 
+  
+ 
+ 
+
   .bigdiv {
     width :700px;
     right: 36px;
@@ -827,17 +873,17 @@ img.image-garden-visualisation:hover {
   }
   .carrou {
     width: 24%;
-    top: 20px;
-    left: 46%;
+    top: 80px;
+    left: 45%;
   }
 
   swiper-slide img {
     height: 306px;
   }
 
-  .layout-style-center #topNav nav {
+  /*.layout-style-center #topNav nav {
     display: none;
-  }
+  }*/
 
   .logo-image .logo img {
     display: none;
@@ -896,8 +942,6 @@ img.image-garden-visualisation:hover {
   .button_link2 {
     margin-left: 30%;
   }
-
-
 
   #name {
     display: flex;
