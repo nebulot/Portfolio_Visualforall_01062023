@@ -857,9 +857,17 @@ img.image-garden-visualisation:hover {
     border-radius: 0;
   }
 
-  .slide {
-    transform: translate(100%);
+  .navbar.slide {
+    background: #ffffff !important;
   }
+
+  .slide {
+    transition: all 0.3s;
+  }
+
+
+
+
  
   
  

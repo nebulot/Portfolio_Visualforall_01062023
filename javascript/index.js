@@ -10,7 +10,7 @@ function scrollToTop(){
 const hamburger = document.getElementById("hamburger");
 hamburger.onclick = () => {
   hamburger.classList.toggle("open");
-  const navbar = document.getElementById("nav_bar");
+  const navbar = document.getElementsByClassName("navbar");
     navbar.classList.toggle("slide");  
   document.body.classList.toggle("noScroll");
 }
